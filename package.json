@@ -1,0 +1,23 @@
+{
+  "name": "boni-kimya",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.3.1",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "jsvectormap": "^1.7.0",
+    "swiper": "^12.2.0"
+  }
+}

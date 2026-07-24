@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boni Kimya - Hayatın Her Anında</title>
+    <meta name="description" content="Boni Kimya Sağlık Ürünleri - Bebek bezi, kadın pedi, yetişkin bezi ve ev bakım ürünlerinde sürdürülebilir kalite." />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-krem text-siyah select-none">
+
+    <!-- Header Section (Dual-Row Architecture) -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="mainHeader">
+      
+      <!-- White Top Utility Navbar -->
+      <div class="bg-white border-b border-gray-100 text-gray-700 py-2 transition-all duration-300 relative w-full text-[11px] font-medium" id="headerTopRow">
+        <div class="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center w-full">
+          
+          <!-- Top Left: Phone, Email, WhatsApp Support & E-Katalog -->
+          <div class="flex items-center space-x-4 sm:space-x-5">
+            <a href="tel:+902128863100" class="flex items-center text-gray-700 hover:text-emerald-700 transition-colors">
+              <i class="las la-phone text-xs mr-1.5 text-emerald-600"></i>
+              <span>+90 212 886 31 00</span>
+            </a>
+            <a href="mailto:info@bonikimya.com" class="hidden sm:flex items-center text-gray-700 hover:text-emerald-700 transition-colors">
+              <i class="las la-envelope text-xs mr-1.5 text-emerald-600"></i>
+              <span>info@bonikimya.com</span>
+            </a>
+            <span class="hidden sm:inline-block text-gray-300 text-[10px]">|</span>
+            <a href="https://api.whatsapp.com/send?phone=+902128863100" target="_blank" class="flex items-center text-gray-700 hover:text-[#25d366] transition-colors font-semibold">
+              <i class="lab la-whatsapp text-sm mr-1 text-[#25d366]"></i>
+              <span>WhatsApp Destek</span>
+            </a>
+            <span class="hidden sm:inline-block text-gray-300 text-[10px]">|</span>
+            <a href="https://www.bonikimya.com/" target="_blank" class="flex items-center text-gray-700 hover:text-emerald-700 transition-colors font-semibold">
+              <i class="las la-book-open text-sm mr-1 text-emerald-600"></i>
+              <span>E-Katalog</span>
+            </a>
+          </div>
+
+          <!-- Top Right: Corporate Brands List (BONI BABY, BABY NICE, POMIKS, BON, BRAVO) -->
+          <div class="hidden md:flex items-center space-x-3 text-[10px] font-bold uppercase tracking-wider">
+            <span class="text-gray-400 font-semibold lowercase">markalarımız:</span>
+            <a href="/urunlerimiz.html?brand=Boni%20Baby" class="text-gray-800 hover:text-emerald-600 transition-colors">BONİ BABY</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Baby%20Nice" class="text-gray-800 hover:text-emerald-600 transition-colors">BABY NİCE</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Pomiks" class="text-gray-800 hover:text-emerald-600 transition-colors">POMİKS</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Bon" class="text-gray-800 hover:text-emerald-600 transition-colors">BON</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Bravo" class="text-gray-800 hover:text-emerald-600 transition-colors">BRAVO</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Unified Single Header Row -->
+      <div class="h-[72px] flex items-center transition-all duration-300 relative w-full" id="headerNavRow">
+        <div class="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center space-x-6 w-full">
+          
+          <!-- Left: Logo -->
+          <div class="flex items-center shrink-0">
+            <a href="/index.html" class="flex items-center">
+              <img src="/logo.png" alt="Boni Kimya Logo" class="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 hover:scale-105" id="headerLogo" />
+            </a>
+          </div>
+
+          <!-- Center: Navigation Links (Spacious 12px Font & Generous Spacing) -->
+          <nav class="hidden xl:flex items-center space-x-6 lg:space-x-7 xl:space-x-8 2xl:space-x-10 shrink-0">
+            <a href="/index.html" class="text-[12px] font-semibold capitalize transition-colors">Anasayfa</a>
+            
+            <!-- KURUMSAL Dropdown -->
+            <div class="group/nav-item py-1">
+              <button class="flex items-center text-[12px] font-semibold capitalize transition-colors cursor-pointer">
+                <span>Kurumsal</span>
+                <i class="las la-angle-down ml-1 text-[10px]"></i>
+              </button>
+              <div class="absolute left-0 right-0 w-full top-full mt-0 bg-white shadow-2xl border-t border-b border-gray-100 py-10 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-250 z-50">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid grid-cols-5 gap-6">
+                  
+                  <a href="/hakkimizda.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hakkimizda.png" alt="Hakkımızda" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">Hakkımızda</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Vizyonumuz, misyonumuz ve kurumsal yapımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/is-sagligi-guvenligi.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/is_sagligi.png" alt="İş Sağlığı Güvenliği" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">İş Sağlığı Güvenliği</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Çalışanlarımızın sağlığı ve güvenliği taahhüdümüz</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/ar-ge.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/arge.png" alt="Ar-Ge" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">Ar-Ge</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">İnovatif ürünler ve laboratuvar çalışmalarımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/kalite-politikamiz.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/kalite.png" alt="Kalite Politikamız" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">Kalite Politikamız</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Üretimde mükemmellik ve standart sertifikalarımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/ihracat.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 last:border-r-0 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/ihracat_dropdown.png" alt="İhracat" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">İhracat</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">POMİKS, BRAVO ve BABY NICE ile küresel ihracat ağımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- ÜRÜNLERİMİZ Dropdown -->
+            <div class="group/nav-item py-1">
+              <button class="flex items-center text-[12px] font-semibold capitalize transition-colors cursor-pointer">
+                <span>Ürünlerimiz</span>
+                <i class="las la-angle-down ml-1 text-[10px]"></i>
+              </button>
+              <div class="absolute left-0 right-0 w-full top-full mt-0 bg-white shadow-2xl border-t border-b border-gray-100 py-10 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-250 z-50">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid grid-cols-6 gap-6">
+                  
+                  <a href="/urunlerimiz.html?category=bebek-bezi" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/bebek_bezi.png" alt="Bebek Bezi" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-[#064e3b] transition-colors">Bebek Bezi</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Konforlu, emici ve cilt dostu bebek bezleri</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=yetiskin-bezi" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hasta_bezi.png" alt="Yetişkin Bezi" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-[#064e3b] transition-colors">Yetişkin Bezi</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Maksimum sızdırmazlık ve medikal koruma</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=hijyenik-ped" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hijyenik_ped.png" alt="Hijyenik Ped" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-[#064e3b] transition-colors">Hijyenik Ped</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Kadın hijyeninde yüksek koruma ve konfor</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=islak-mendil" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/islak_mendil.png" alt="Islak Mendil & Temizlik" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-[#064e3b] transition-colors">Islak Mendil & Temizlik</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Pratik, alkolsüz ve hijyenik mendil çözümleri</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=bebek-bakimi" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/bebek_bakimi.png" alt="Bebek Bakımı" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-[#064e3b] transition-colors">Bebek Bakımı</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Hassas ciltler için özel pudra ve havlular</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=pamuk-urunleri" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 last:border-r-0 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/pamuk_urunleri.png" alt="Pamuk Ürünleri" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-[#064e3b] transition-colors">Pamuk Ürünleri</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">%100 saf pamuktan üretilmiş kişisel bakım ürünleri</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- HİZMETLERİMİZ Dropdown -->
+            <div class="group/nav-item py-1">
+              <button class="flex items-center text-[12px] font-semibold capitalize transition-colors cursor-pointer">
+                <span>Hizmetlerimiz</span>
+                <i class="las la-angle-down ml-1 text-[10px]"></i>
+              </button>
+              <div class="absolute left-0 right-0 w-full top-full mt-0 bg-white shadow-2xl border-t border-b border-gray-100 py-10 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-250 z-50">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid grid-cols-3 gap-8">
+                  
+                  <a href="/makina-danismanligi.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/makina_danismanligi.png" alt="Makine Danışmanlığı" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">Makine Danışmanlığı</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Hijyenik ürün üretim makineleri kurulum ve optimizasyon danışmanlığı</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Bilgi Alın</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/hammadde-danismanligi.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hammadde_danismanligi.png" alt="Hammadde Danışmanlığı" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">Hammadde Danışmanlığı</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Üretim süreci ve kaliteli girdi tedarik danışmanlığı</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Bilgi Alın</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/private-label.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 last:border-r-0 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/private_label.png" alt="Private Label" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-[#064e3b] transition-colors">Private Label</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Kendi markanız altında fason hijyenik ürün üretimi</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-[#064e3b] flex items-center mt-3 transition-colors">
+                      <span>Bilgi Alın</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <a href="/sertifikalarimiz.html" class="text-[12px] font-semibold capitalize transition-colors">Sertifikalarımız</a>
+            <a href="/haberler.html" class="text-[12px] font-semibold capitalize transition-colors">Blog</a>
+            <a href="/iletisim.html" class="text-[12px] font-semibold capitalize transition-colors">İletişim</a>
+          </nav>
+
+          <!-- Right: E-Katalog Button, WhatsApp Icon Button, Language Selector & Search Button -->
+          <div class="flex items-center space-x-3 sm:space-x-4 lg:space-x-5 shrink-0">
+            
+            <!-- E-Katalog Pill Button -->
+            <a href="https://www.bonikimya.com/" target="_blank" class="hidden md:flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-500/20 hover:bg-emerald-500 text-white text-xs font-semibold transition-all duration-300 border border-emerald-500/30 cursor-pointer shadow-xs">
+              <i class="las la-book-open text-sm text-emerald-400"></i>
+              <span>E-Katalog</span>
+            </a>
+
+            <!-- Sleek Compact WhatsApp Icon Button -->
+            <a href="https://api.whatsapp.com/send?phone=+902128863100" target="_blank" aria-label="WhatsApp Destek" class="w-9 h-9 rounded-full bg-emerald-500/20 text-[#25d366] hover:bg-emerald-500 hover:text-white border border-emerald-500/30 flex items-center justify-center transition-all duration-300 cursor-pointer shrink-0 shadow-xs" id="headerWhatsappLink">
+              <i class="lab la-whatsapp text-lg"></i>
+            </a>
+
+            <!-- Subtle Vertical Divider -->
+            <span class="text-white/20 text-xs hidden sm:inline-block">|</span>
+
+            <!-- Language Selector -->
+            <div class="relative group/lang py-1">
+              <button class="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold text-white transition-all duration-300 border border-white/15 cursor-pointer focus:outline-none" id="headerLangBtn">
+                <i class="las la-globe text-sm text-emerald-400"></i>
+                <span>TR</span>
+                <i class="las la-angle-down text-[9px] opacity-70"></i>
+              </button>
+              
+              <div class="absolute right-0 top-full mt-2 w-28 bg-white rounded-xl shadow-lg border border-gray-100 py-1.5 opacity-0 invisible group-hover/lang:opacity-100 group-hover/lang:visible transition-all duration-200 z-50">
+                <a href="#" data-lang="tr" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-[#064e3b]">
+                  <img src="https://flagcdn.com/w20/tr.png" alt="TR Flag" class="w-4 mr-1.5 object-cover" /> TR
+                </a>
+                <a href="#" data-lang="en" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-[#064e3b]">
+                  <img src="https://flagcdn.com/w20/gb.png" alt="EN Flag" class="w-4 mr-1.5 object-cover" /> EN
+                </a>
+                <a href="#" data-lang="fr" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-[#064e3b]">
+                  <img src="https://flagcdn.com/w20/fr.png" alt="FR Flag" class="w-4 mr-1.5 object-cover" /> FR
+                </a>
+                <a href="#" data-lang="es" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-[#064e3b]">
+                  <img src="https://flagcdn.com/w20/es.png" alt="ES Flag" class="w-4 mr-1.5 object-cover" /> ES
+                </a>
+                <a href="#" data-lang="ru" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-[#064e3b]">
+                  <img src="https://flagcdn.com/w20/ru.png" alt="RU Flag" class="w-4 mr-1.5 object-cover" /> RU
+                </a>
+                <a href="#" data-lang="ar" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-[#064e3b]">
+                  <img src="https://flagcdn.com/w20/sa.png" alt="AR Flag" class="w-4 mr-1.5 object-cover" /> AR
+                </a>
+              </div>
+            </div>
+
+            <!-- Subtle Vertical Divider -->
+            <span class="text-white/20 text-xs hidden sm:inline-block">|</span>
+
+            <!-- Search Button -->
+            <button id="openHeaderSearchBtn" aria-label="Arama Yapın" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 flex items-center justify-center text-white transition-all duration-300 cursor-pointer shrink-0">
+              <i class="las la-search text-base"></i>
+            </button>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mobileMenuBtn" aria-label="Menüyü Aç" class="xl:hidden w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 flex items-center justify-center text-white transition-colors cursor-pointer shrink-0">
+              <i class="las la-bars text-xl"></i>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Slide-over Menu Panel -->
+    <div id="mobileMenuPanel" class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-350 ease-in-out flex flex-col">
+      <div class="p-6 border-b border-gray-100 flex items-center justify-between">
+        <img src="/logo.png" alt="Boni Kimya" class="h-10 w-auto object-contain" />
+        <button id="closeMobileMenuBtn" class="p-2 text-gray-600 font-semibold hover:text-siyah transition-colors cursor-pointer">
+          <i class="las la-times text-xl"></i>
+        </button>
+      </div>
+
+      <div class="flex-1 overflow-y-auto p-6 space-y-6">
+        <nav class="space-y-4">
+          <a href="/index.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">ANASAYFA</a>
+          
+          <!-- Kurumsal Accordion -->
+          <div class="space-y-2">
+            <button id="mobileBrandsToggle" class="w-full flex items-center justify-between text-sm font-bold text-[#000000] hover:text-pembe transition-colors py-1 cursor-pointer">
+              <span>KURUMSAL</span>
+              <i class="las la-angle-down text-xs transition-transform" id="mobileBrandsArrow"></i>
+            </button>
+            <div id="mobileBrandsSubmenu" class="hidden pl-4 space-y-2.5 border-l border-gray-100">
+              <a href="/hakkimizda.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Hakkımızda</a>
+              <a href="/is-sagligi-guvenligi.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">İş Sağlığı Güvenliği</a>
+              <a href="/ar-ge.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Ar-Ge</a>
+              <a href="/kalite-politikamiz.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Kalite Politikamız</a>
+              <a href="/ihracat.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">İhracat</a>
+            </div>
+          </div>
+
+          <!-- Ürünlerimiz Accordion -->
+          <div class="space-y-2">
+            <button id="mobileServicesToggle" class="w-full flex items-center justify-between text-sm font-bold text-[#000000] hover:text-pembe transition-colors py-1 cursor-pointer">
+              <span>ÜRÜNLERİMİZ</span>
+              <i class="las la-angle-down text-xs transition-transform" id="mobileServicesArrow"></i>
+            </button>
+            <div id="mobileServicesSubmenu" class="hidden pl-4 space-y-2.5 border-l border-gray-100">
+              <a href="/urunlerimiz.html?category=bebek-bezi" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Bebek Bezi</a>
+              <a href="/urunlerimiz.html?category=yetiskin-bezi" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Yetişkin Bezi</a>
+              <a href="/urunlerimiz.html?category=hijyenik-ped" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Hijyenik Ped</a>
+              <a href="/urunlerimiz.html?category=islak-mendil" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Islak Mendil</a>
+              <a href="/urunlerimiz.html?category=pamuk-urunleri" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Pamuk Ürünleri</a>
+              <a href="/urunlerimiz.html?category=bebek-bakimi" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Bebek Bakımı</a>
+            </div>
+          </div>
+
+          <!-- Hizmetlerimiz Accordion -->
+          <div class="space-y-2">
+            <button id="mobileServicesMenuToggle" class="w-full flex items-center justify-between text-sm font-bold text-[#000000] hover:text-pembe transition-colors py-1 cursor-pointer">
+              <span>HİZMETLERİMİZ</span>
+              <i class="las la-angle-down text-xs transition-transform" id="mobileServicesMenuArrow"></i>
+            </button>
+            <div id="mobileServicesMenuSub" class="hidden pl-4 space-y-2.5 border-l border-gray-100">
+              <a href="/makina-danismanligi.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Makine Danışmanlığı</a>
+              <a href="/hammadde-danismanligi.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Hammadde Danışmanlığı</a>
+              <a href="/private-label.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Private Label</a>
+            </div>
+          </div>
+
+          <a href="/sertifikalarimiz.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">SERTİFİKALARIMIZ</a>
+          <a href="/haberler.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">HABERLER</a>
+          <a href="/iletisim.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">İLETİŞİM</a>
+        </nav>
+      </div>
+
+      <div class="p-6 border-t border-gray-100 bg-gray-50">
+        <a href="https://api.whatsapp.com/send?phone=+902128863100" target="_blank" class="flex items-center justify-center space-x-2 py-3 bg-[#25d366] hover:bg-[#20ba5a] text-neutral-900 font-bold rounded-xl shadow-md transition-colors text-xs">
+          <i class="lab la-whatsapp text-lg"></i>
+          <span>WhatsApp Destek</span>
+        </a>
+      </div>
+    </div>
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
+      
+      
+    <!-- Main Content Wrapper -->
+    <main class="pt-0">
+      
+      <!-- Enterprise Grade Cinematic Hero Section (Apple/Tesla/Siemens Style) -->
+      <section class="relative select-none w-full min-h-screen h-screen overflow-hidden bg-black flex items-center justify-center pt-24 pb-12" id="heroSection">
+        
+        <!-- Background Video Layer (Boni kimya videosu tanırım.mp4) -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+          <video autoplay loop muted playsinline class="w-full h-full object-cover object-center scale-100 filter brightness-90">
+            <source src="/Boni kimya videosu tanırım.mp4" type="video/mp4" />
+            <img src="/quickhero.png" alt="Boni Kimya Hero" class="w-full h-full object-cover" />
+          </video>
+          
+          <!-- Clean Dark Base Overlay (Left Focused for Text Contrast, Right Clear for Video Natural Beauty) -->
+          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent z-10"></div>
+          
+          <!-- Hero Background Blueprint Grid Decoration -->
+          <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20 z-10"></div>
+        </div>
+
+        <!-- Main Hero Container -->
+        <div class="relative z-20 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 w-full text-white flex flex-col justify-between h-full pt-20 pb-6">
+          
+          <!-- Middle Left Aligned Content Box -->
+          <div class="max-w-2xl my-auto space-y-5 lg:space-y-7 animate-fadeIn">
+            
+            <!-- Small Eyebrow -->
+            <div class="inline-flex items-center space-x-3">
+              <span class="w-8 h-[2px] bg-[#00b594]"></span>
+              <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#00b594]">
+                SAĞLIKLI BİR GELECEK İÇİN
+              </span>
+            </div>
+
+            <!-- Main Heading (Enlarged +25% to 52px as requested) -->
+            <h1 class="text-3xl sm:text-4xl lg:text-[52px] font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-md">
+              Sağlıklı ve hijyenik bir yaşam için, yenilikçi çözümlerimizle Türkiye'den dünyaya değer katıyoruz.
+            </h1>
+
+            <!-- Description Paragraph -->
+            <p class="text-sm sm:text-base text-gray-300 font-normal leading-relaxed max-w-xl">
+              Hijyenik, güvenilir ve sürdürülebilir çözümlerimizle üretiminize güç katıyoruz.
+            </p>
+
+            <!-- CTA Group (Enlarged Single Row) -->
+            <div class="flex flex-wrap items-center gap-3.5 pt-2">
+              
+              <!-- Primary Button -->
+              <a href="#urunlerimiz-section" class="inline-flex items-center justify-center px-6 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold rounded-xl text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 shadow-md hover:shadow-emerald-500/25 hover:-translate-y-0.5 group cursor-pointer border border-emerald-500/30">
+                <span>ÇÖZÜMLERİMİZİ KEŞFEDİN</span>
+                <i class="las la-arrow-right ml-2 text-base group-hover:translate-x-1 transition-transform"></i>
+              </a>
+
+              <!-- Secondary Glass Button (Watch Corporate Video) -->
+              <button id="openVideoModalBtn" class="inline-flex items-center justify-center px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-extrabold rounded-xl border border-white/25 backdrop-blur-md text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 cursor-pointer shadow-xs hover:-translate-y-0.5">
+                <i class="las la-play-circle text-lg mr-2 text-white"></i>
+                <span>KURUMSAL VİDEO İZLEYİN</span>
+              </button>
+
+              <!-- Tertiary Glass Button (Katalog İncele) -->
+              <a href="https://www.bonikimya.com/" target="_blank" class="inline-flex items-center justify-center px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-extrabold rounded-xl border border-white/25 backdrop-blur-md text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 cursor-pointer shadow-xs hover:-translate-y-0.5">
+                <i class="las la-book-open text-lg mr-2 text-white"></i>
+                <span>KATALOG İNCELE</span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- Bottom Horizontal Glassmorphism Statistics Grid (Enlarged +25%) -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3.5 sm:gap-4 lg:gap-5 pt-6 border-t border-white/10 mb-2">
+            
+            <!-- Card 1: Deneyim -->
+            <div class="bg-black/45 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-4.5 flex items-center space-x-3.5 hover:bg-black/55 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+              <div class="w-9 h-9 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-emerald-400 shrink-0">
+                <i class="las la-award text-xl"></i>
+              </div>
+              <div>
+                <span class="text-xl sm:text-2xl font-black text-white block leading-none">40+</span>
+                <span class="text-xs text-gray-300 font-medium block mt-1">Yıllık Deneyim</span>
+              </div>
+            </div>
+
+            <!-- Card 2: Müşteriler -->
+            <div class="bg-black/45 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-4.5 flex items-center space-x-3.5 hover:bg-black/55 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+              <div class="w-9 h-9 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-emerald-400 shrink-0">
+                <i class="las la-user-friends text-xl"></i>
+              </div>
+              <div>
+                <span class="text-xl sm:text-2xl font-black text-white block leading-none">150+</span>
+                <span class="text-xs text-gray-300 font-medium block mt-1">Endüstriyel Müşteri</span>
+              </div>
+            </div>
+
+            <!-- Card 3: İhracat -->
+            <div class="bg-black/45 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-4.5 flex items-center space-x-3.5 hover:bg-black/55 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+              <div class="w-9 h-9 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-emerald-400 shrink-0">
+                <i class="las la-globe text-xl"></i>
+              </div>
+              <div>
+                <span class="text-xl sm:text-2xl font-black text-white block leading-none">35+</span>
+                <span class="text-xs text-gray-300 font-medium block mt-1">Ülkeye İhracat</span>
+              </div>
+            </div>
+
+            <!-- Card 4: Sertifika -->
+            <div class="bg-black/45 backdrop-blur-md border border-white/15 rounded-2xl p-4 sm:p-4.5 flex items-center space-x-3.5 hover:bg-black/55 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+              <div class="w-9 h-9 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-emerald-400 shrink-0">
+                <i class="las la-certificate text-xl"></i>
+              </div>
+              <div>
+                <span class="text-xl sm:text-2xl font-black text-white block leading-none">ISO</span>
+                <span class="text-xs text-gray-300 font-medium block mt-1">Sertifikalı Üretim</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Animated Scroll Indicator -->
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-1 text-white/70 hover:text-white transition-opacity duration-300 cursor-pointer pointer-events-auto" id="scrollIndicator">
+            <div class="w-5 h-8 border-2 border-white/40 rounded-full flex justify-center p-1">
+              <div class="w-1 h-2 bg-emerald-400 rounded-full animate-bounce"></div>
+            </div>
+            <span class="text-[9px] uppercase tracking-widest font-semibold text-white/80">AŞAĞI KAYDIRIN</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Corporate Video Modal -->
+      <div id="heroVideoModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="fixed inset-0 bg-black/80 backdrop-blur-lg transition-opacity duration-300 opacity-0" id="videoModalBackdrop"></div>
+        <div class="flex min-h-full items-center justify-center p-4">
+          <div class="relative transform overflow-hidden rounded-3xl bg-black w-full max-w-4xl shadow-2xl transition-all duration-300 scale-95 opacity-0 border border-white/10" id="videoModalCard">
+            <button id="closeVideoModalBtn" class="absolute right-4 top-4 text-white/70 hover:text-white bg-black/50 p-2 rounded-full z-20 cursor-pointer">
+              <i class="las la-times text-2xl"></i>
+            </button>
+            <div class="aspect-video w-full">
+              <video id="heroModalVideo" class="w-full h-full object-cover" controls preload="metadata">
+                <source src="/firma-tanitim-videosu.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Categories Card Grid Section -->
+      <section class="py-24 bg-white border-b border-gray-50 select-none" id="urunlerimiz-section">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+          
+          <!-- Modern Section Header -->
+          <div class="relative max-w-3xl mx-auto text-center mb-16 select-none">
+            <!-- Subtle soft ambient glow background -->
+            <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#00b594]/5 blur-3xl rounded-full pointer-events-none -z-10"></div>
+            
+            <div class="space-y-4">
+              <!-- Modern Category Badge -->
+              <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#00b594]/10 border border-[#00b594]/20 text-[#00b594] text-xs font-semibold tracking-wide">
+                <span class="w-2 h-2 rounded-full bg-[#00b594]"></span>
+                <span>Ürün Gruplarımız</span>
+              </div>
+
+              <!-- Main Title -->
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                Hayatın Her Anına Uygun <br class="hidden sm:inline" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00b594] via-emerald-600 to-teal-600">
+                  Hijyen Çözümleri
+                </span>
+              </h2>
+              
+              <!-- Subtitle -->
+              <p class="text-gray-600 text-base font-normal max-w-2xl mx-auto leading-relaxed pt-1">
+                Bebek bakımından yetişkin bakımına, kadın hijyeninden ıslak mendil çözümlerine kadar geniş ürün portföyümüzle global pazarlara değer katıyoruz.
+              </p>
+            </div>
+          </div>
+
+          <!-- 6-Card Premium Grid -->
+          <div class="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            
+            <!-- Card 1: Bebek Bezi -->
+            <div class="scroll-animate-card transform opacity-0 translate-y-16 scale-95 relative rounded-2xl bg-white/90 backdrop-blur-md border border-gray-100/90 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#00b594]/30 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-between overflow-hidden group will-change-[transform,opacity]">
+              <!-- Subtle internal glow overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-[#00b594]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
+              
+              <!-- Left Column: Content -->
+              <div class="w-[58%] flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- Icon Badge -->
+                  <div class="w-12 h-12 rounded-full bg-[#e6fbf2] text-[#00b594] flex items-center justify-center text-xl shadow-xs border border-emerald-100/30 group-hover:scale-110 transition-transform duration-500">
+                    <i class="las la-baby"></i>
+                  </div>
+                  <!-- Title & Subtitle Badge -->
+                  <div>
+                    <h3 class="text-xl font-black text-gray-900 leading-tight">Bebek Bezi</h3>
+                    <span class="inline-block text-[9px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-md bg-emerald-50 text-emerald-600 border border-emerald-100/60 mt-1.5">24 ÜRÜN ÇEŞİDİ</span>
+                  </div>
+                  <!-- Bullet List -->
+                  <ul class="space-y-2">
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Premium ve ekonomik segment seçenekleri</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Private Label üretim imkanı</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Global ihracat gücü</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Action Link -->
+                <div class="pt-6">
+                  <a href="/urunlerimiz.html?category=bebek-bezi" class="inline-flex items-center text-[10px] font-black uppercase tracking-wider text-[#00b594] hover:text-emerald-700 transition-colors">
+                    <span>ÜRÜNLERİ İNCELE</span>
+                    <i class="las la-arrow-right ml-1.5 transition-transform group-hover:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Right Column: Framed Product Image -->
+              <div class="w-[42%] flex items-center justify-end pl-2">
+                <div class="w-full aspect-square max-w-[130px] rounded-xl overflow-hidden border border-gray-100 shadow-xs bg-white relative group-hover:shadow-md group-hover:scale-105 group-hover:rotate-2 transition-all duration-500">
+                  <img src="/categories/bebek_bezi_card.png" alt="Bebek Bezi" class="w-full h-full object-cover transform transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Yetişkin Bezi -->
+            <div class="scroll-animate-card transform opacity-0 translate-y-16 scale-95 relative rounded-2xl bg-white/90 backdrop-blur-md border border-gray-100/90 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#00b594]/30 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-between overflow-hidden group will-change-[transform,opacity]">
+              <!-- Subtle internal glow overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-[#00b594]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
+              
+              <!-- Left Column: Content -->
+              <div class="w-[58%] flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- Icon Badge -->
+                  <div class="w-12 h-12 rounded-full bg-[#e6fbf2] text-[#00b594] flex items-center justify-center text-xl shadow-xs border border-emerald-100/30 group-hover:scale-110 transition-transform duration-500">
+                    <i class="las la-user-nurse"></i>
+                  </div>
+                  <!-- Title & Subtitle Badge -->
+                  <div>
+                    <h3 class="text-xl font-black text-gray-900 leading-tight">Yetişkin Bezi</h3>
+                    <span class="inline-block text-[9px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-md bg-sky-50 text-sky-600 border border-sky-100/60 mt-1.5">18 ÜRÜN ÇEŞİDİ</span>
+                  </div>
+                  <!-- Bullet List -->
+                  <ul class="space-y-2">
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Hasta bakımına özel konfor çözümleri</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Yüksek emicilik ve cilt dostu yapı</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Kurumsal tedarik imkanı</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Action Link -->
+                <div class="pt-6">
+                  <a href="/urunlerimiz.html?category=yetiskin-bezi" class="inline-flex items-center text-[10px] font-black uppercase tracking-wider text-[#00b594] hover:text-emerald-700 transition-colors">
+                    <span>ÜRÜNLERİ İNCELE</span>
+                    <i class="las la-arrow-right ml-1.5 transition-transform group-hover:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Right Column: Framed Product Image -->
+              <div class="w-[42%] flex items-center justify-end pl-2">
+                <div class="w-full aspect-square max-w-[130px] rounded-xl overflow-hidden border border-gray-100 shadow-xs bg-white relative group-hover:shadow-md group-hover:scale-105 group-hover:rotate-2 transition-all duration-500">
+                  <img src="/categories/yetiskin_bezi_card.png" alt="Yetişkin Bezi" class="w-full h-full object-cover transform transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Hijyenik Ped -->
+            <div class="scroll-animate-card transform opacity-0 translate-y-16 scale-95 relative rounded-2xl bg-white/90 backdrop-blur-md border border-gray-100/90 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#00b594]/30 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-between overflow-hidden group will-change-[transform,opacity]">
+              <!-- Subtle internal glow overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-[#00b594]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
+              
+              <!-- Left Column: Content -->
+              <div class="w-[58%] flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- Icon Badge -->
+                  <div class="w-12 h-12 rounded-full bg-[#e6fbf2] text-[#00b594] flex items-center justify-center text-xl shadow-xs border border-emerald-100/30 group-hover:scale-110 transition-transform duration-500">
+                    <i class="las la-female"></i>
+                  </div>
+                  <!-- Title & Subtitle Badge -->
+                  <div>
+                    <h3 class="text-xl font-black text-gray-900 leading-tight">Hijyenik Ped</h3>
+                    <span class="inline-block text-[9px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-md bg-pink-50 text-pink-600 border border-pink-100/60 mt-1.5">16 ÜRÜN ÇEŞİDİ</span>
+                  </div>
+                  <!-- Bullet List -->
+                  <ul class="space-y-2">
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Ultra ince ve premium seri</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Yüksek koruma ve konfor</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Global ihracat gücü</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Action Link -->
+                <div class="pt-6">
+                  <a href="/urunlerimiz.html?category=hijyenik-ped" class="inline-flex items-center text-[10px] font-black uppercase tracking-wider text-[#00b594] hover:text-emerald-700 transition-colors">
+                    <span>ÜRÜNLERİ İNCELE</span>
+                    <i class="las la-arrow-right ml-1.5 transition-transform group-hover:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Right Column: Framed Product Image -->
+              <div class="w-[42%] flex items-center justify-end pl-2">
+                <div class="w-full aspect-square max-w-[130px] rounded-xl overflow-hidden border border-gray-100 shadow-xs bg-white relative group-hover:shadow-md group-hover:scale-105 group-hover:rotate-2 transition-all duration-500">
+                  <img src="/categories/hijyenik_ped_card.png" alt="Hijyenik Ped" class="w-full h-full object-cover transform transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Islak Mendil -->
+            <div class="scroll-animate-card transform opacity-0 translate-y-16 scale-95 relative rounded-2xl bg-white/90 backdrop-blur-md border border-gray-100/90 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#00b594]/30 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-between overflow-hidden group will-change-[transform,opacity]">
+              <!-- Subtle internal glow overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-[#00b594]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
+              
+              <!-- Left Column: Content -->
+              <div class="w-[58%] flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- Icon Badge -->
+                  <div class="w-12 h-12 rounded-full bg-[#e6fbf2] text-[#00b594] flex items-center justify-center text-xl shadow-xs border border-emerald-100/30 group-hover:scale-110 transition-transform duration-500">
+                    <i class="las la-tint"></i>
+                  </div>
+                  <!-- Title & Subtitle Badge -->
+                  <div>
+                    <h3 class="text-xl font-black text-gray-900 leading-tight">Islak Mendil</h3>
+                    <span class="inline-block text-[9px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-600 border border-teal-100/60 mt-1.5">22 ÜRÜN ÇEŞİDİ</span>
+                  </div>
+                  <!-- Bullet List -->
+                  <ul class="space-y-2">
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Bebek ve kişisel bakım serileri</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Alkolsüz ve paraben içermeyen formüller</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Pratik, yumuşak ve dayanıklı</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Action Link -->
+                <div class="pt-6">
+                  <a href="/urunlerimiz.html?category=islak-mendil" class="inline-flex items-center text-[10px] font-black uppercase tracking-wider text-[#00b594] hover:text-emerald-700 transition-colors">
+                    <span>ÜRÜNLERİ İNCELE</span>
+                    <i class="las la-arrow-right ml-1.5 transition-transform group-hover:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Right Column: Framed Product Image -->
+              <div class="w-[42%] flex items-center justify-end pl-2">
+                <div class="w-full aspect-square max-w-[130px] rounded-xl overflow-hidden border border-gray-100 shadow-xs bg-white relative group-hover:shadow-md group-hover:scale-105 group-hover:rotate-2 transition-all duration-500">
+                  <img src="/categories/islak_mendil_card.png" alt="Islak Mendil" class="w-full h-full object-cover transform transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Private Label -->
+            <div class="scroll-animate-card transform opacity-0 translate-y-16 scale-95 relative rounded-2xl bg-white/90 backdrop-blur-md border border-gray-100/90 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#00b594]/30 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-between overflow-hidden group will-change-[transform,opacity]">
+              <!-- Subtle internal glow overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-[#00b594]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
+              
+              <!-- Left Column: Content -->
+              <div class="w-[58%] flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- Icon Badge -->
+                  <div class="w-12 h-12 rounded-full bg-[#e6fbf2] text-[#00b594] flex items-center justify-center text-xl shadow-xs border border-emerald-100/30 group-hover:scale-110 transition-transform duration-500">
+                    <i class="las la-box"></i>
+                  </div>
+                  <!-- Title & Subtitle Badge -->
+                  <div>
+                    <h3 class="text-xl font-black text-gray-900 leading-tight">Private Label</h3>
+                    <span class="inline-block text-[9px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-md bg-emerald-50 text-emerald-600 border border-emerald-100/60 mt-1.5">ÖZEL ÜRETİM</span>
+                  </div>
+                  <!-- Bullet List -->
+                  <ul class="space-y-2">
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Markanıza özel fason üretim</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Düşük MOQ avantajı</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Ambalaj, tasarım ve lojistik desteği</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Action Link -->
+                <div class="pt-6">
+                  <a href="/private-label.html" class="inline-flex items-center text-[10px] font-black uppercase tracking-wider text-[#00b594] hover:text-emerald-700 transition-colors">
+                    <span>DETAYLI BİLGİ</span>
+                    <i class="las la-arrow-right ml-1.5 transition-transform group-hover:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Right Column: Framed Product Image -->
+              <div class="w-[42%] flex items-center justify-end pl-2">
+                <div class="w-full aspect-square max-w-[130px] rounded-xl overflow-hidden border border-gray-100 shadow-xs bg-white relative group-hover:shadow-md group-hover:scale-105 group-hover:rotate-2 transition-all duration-500">
+                  <img src="/categories/private_label_card.png" alt="Private Label" class="w-full h-full object-cover transform transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Kurumsal Çözümler -->
+            <div class="scroll-animate-card transform opacity-0 translate-y-16 scale-95 relative rounded-2xl bg-white/90 backdrop-blur-md border border-gray-100/90 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#00b594]/30 hover:scale-[1.02] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-between overflow-hidden group will-change-[transform,opacity]">
+              <!-- Subtle internal glow overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-[#00b594]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
+              
+              <!-- Left Column: Content -->
+              <div class="w-[58%] flex flex-col justify-between">
+                <div class="space-y-4">
+                  <!-- Icon Badge -->
+                  <div class="w-12 h-12 rounded-full bg-[#e6fbf2] text-[#00b594] flex items-center justify-center text-xl shadow-xs border border-emerald-100/30 group-hover:scale-110 transition-transform duration-500">
+                    <i class="las la-handshake"></i>
+                  </div>
+                  <!-- Title & Subtitle Badge -->
+                  <div>
+                    <h3 class="text-xl font-black text-gray-900 leading-tight">Kurumsal Çözümler</h3>
+                    <span class="inline-block text-[9px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-600 border border-indigo-100/60 mt-1.5">ÖZEL HİZMETLER</span>
+                  </div>
+                  <!-- Bullet List -->
+                  <ul class="space-y-2">
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Zincir market ve perakende özel çözümleri</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Toplu alımlarda esnek üretim planlaması</span>
+                    </li>
+                    <li class="flex items-start text-xs text-gray-500 font-medium leading-tight">
+                      <i class="las la-check-circle text-[#00b594] text-sm mr-1.5 mt-0.5 shrink-0"></i>
+                      <span>Güçlü lojistik ve tedarik zinciri</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Action Link -->
+                <div class="pt-6">
+                  <a href="/iletisim.html" class="inline-flex items-center text-[10px] font-black uppercase tracking-wider text-[#00b594] hover:text-emerald-700 transition-colors">
+                    <span>DETAYLI BİLGİ</span>
+                    <i class="las la-arrow-right ml-1.5 transition-transform group-hover:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Right Column: Framed Product Image -->
+              <div class="w-[42%] flex items-center justify-end pl-2">
+                <div class="w-full aspect-square max-w-[130px] rounded-xl overflow-hidden border border-gray-100 shadow-xs bg-white relative group-hover:shadow-md group-hover:scale-105 group-hover:rotate-2 transition-all duration-500">
+                  <img src="/categories/kurumsal_cozumler_card.png" alt="Kurumsal Çözümler" class="w-full h-full object-cover transform transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+      </section>
+
+      
+
+      <!-- Redesigned About Us Section -->
+      <section class="py-24 bg-white border-b border-gray-100 select-none scroll-mt-28 lg:scroll-mt-36" id="about">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Left Column: Content -->
+            <div class="lg:col-span-5 space-y-6">
+              <span class="text-xs font-black uppercase tracking-widest text-[#000000]">BONİ KİMYA HAKKINDA</span>
+              <h2 class="text-4xl lg:text-5xl font-black tracking-tight leading-tight text-[#000000]">Türkiye'den Dünyaya Hijyen Üretimi</h2>
+              <div class="w-16 h-1 bg-[#000000] rounded-full"></div>
+              
+              <p class="text-gray-600 text-sm font-light leading-relaxed">
+                Boni Kimya olarak bebek bezi, yetişkin bezi, hijyenik ped, ıslak mendil ve kişisel bakım ürünleri alanında global markalara ve distribütörlere özel üretim çözümleri sunuyoruz.
+              </p>
+              <p class="text-gray-600 text-sm font-light leading-relaxed">
+                Modern üretim tesisimiz, ileri teknoloji makinelerimiz ve uzman kadromuz ile yüksek kalite standartlarında üretim yaparak iş ortaklarımızın büyümesine değer katıyoruz.
+              </p>
+              
+              <!-- Buttons -->
+              <div class="pt-2 flex flex-wrap gap-4">
+                <button id="aboutB2BBtn" class="inline-flex items-center px-6 py-3 bg-[#000000] hover:bg-[#000000] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-300 shadow-md cursor-pointer">
+                  <i class="las la-building text-base mr-2 animate-pulse"></i>
+                  Distribütörlük Başvurusu
+                </button>
+                <a href="#factoryCapacity" class="inline-flex items-center px-6 py-3 border border-gray-200 hover:border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-neutral-900 text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-300">
+                  <i class="las la-play text-base mr-2"></i>
+                  Fabrikamızı İnceleyin
+                </a>
+              </div>
+
+              <!-- Certifications Badges -->
+              <div class="pt-6 grid grid-cols-4 gap-4 text-center border-t border-gray-100">
+                <div class="flex flex-col items-center">
+                  <i class="las la-certificate text-2xl text-[#000000] mb-1"></i>
+                  <span class="text-[9px] font-black uppercase text-[#000000]">ISO</span>
+                  <span class="text-[8px] text-gray-600 font-semibold font-light mt-0.5">ISO 9001:2015</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <span class="text-lg font-black text-[#000000] leading-none mb-1.5 h-6 flex items-center">CE</span>
+                  <span class="text-[9px] font-black uppercase text-[#000000]">CE</span>
+                  <span class="text-[8px] text-gray-600 font-semibold font-light mt-0.5">CE Belgeli</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <i class="las la-shield-alt text-2xl text-[#000000] mb-1"></i>
+                  <span class="text-[9px] font-black uppercase text-[#000000]">GMP</span>
+                  <span class="text-[8px] text-gray-600 font-semibold font-light mt-0.5">GMP Standartı</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <i class="las la-globe text-2xl text-[#000000] mb-1"></i>
+                  <span class="text-[9px] font-black uppercase text-[#000000]">ETİK</span>
+                  <span class="text-[8px] text-gray-600 font-semibold font-light mt-0.5">Etik Üretim</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Factory Building Photo -->
+            <div class="lg:col-span-7 flex flex-col items-center relative">
+              <!-- Factory Building Wrapper -->
+              <div class="w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 relative group aspect-[16/10]">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#000000]/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                <img src="/categories/boni_kimya_fabrika.png" alt="Boni Kimya Tesisleri" class="w-full h-full object-cover transform scale-100 group-hover:scale-102 transition-transform duration-700" />
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Row: Rakamlarla Boni Kimya Dashboard -->
+          <div class="bg-white rounded-3xl border border-gray-100 border-t-4 border-t-[#000000] shadow-xl p-8 mt-16 hover:shadow-2xl transition-all duration-300" id="rakamlarlaBoni">
+            <div class="grid grid-cols-2 md:grid-cols-7 gap-6 md:gap-4 items-center">
+              
+              <!-- Title Column -->
+              <div class="col-span-2 md:col-span-1 text-center md:text-left border-b md:border-b-0 md:border-r border-gray-100 pb-4 md:pb-0 md:pr-4">
+                <h3 class="text-sm font-black text-[#000000] leading-tight tracking-tight uppercase">Rakamlarla<br>Boni Kimya</h3>
+                <div class="w-8 h-0.5 bg-[#000000] mx-auto md:mx-0 mt-2"></div>
+              </div>
+
+              <!-- Stat 1: Üretim Alanı (Navy) -->
+              <div class="text-center space-y-1 md:border-r border-gray-100 last:border-0 group/stat hover:scale-105 transition-all duration-300">
+                <div class="w-10 h-10 mx-auto bg-[#000000]/5 text-[#000000] rounded-xl flex items-center justify-center text-xl mb-2 group-hover/stat:bg-[#000000] group-hover/stat:text-neutral-900 transition-all duration-300">
+                  <i class="las la-industry"></i>
+                </div>
+                <h4 class="text-lg font-black text-[#000000] tracking-tight leading-none"><span class="stat-number" data-target="15000">0</span>&nbsp;m²</h4>
+                <p class="text-[9px] font-bold uppercase tracking-wider text-gray-600 font-semibold">Üretim Alanı</p>
+              </div>
+
+              <!-- Stat 2: İhracat Yapılan Ülke (Red) -->
+              <div class="text-center space-y-1 md:border-r border-gray-100 last:border-0 group/stat hover:scale-105 transition-all duration-300">
+                <div class="w-10 h-10 mx-auto bg-[#000000]/5 text-[#000000] rounded-xl flex items-center justify-center text-xl mb-2 group-hover/stat:bg-[#000000] group-hover/stat:text-neutral-900 transition-all duration-300">
+                  <i class="las la-globe"></i>
+                </div>
+                <h4 class="text-lg font-black text-[#000000] tracking-tight leading-none"><span class="stat-number" data-target="50">0</span>+</h4>
+                <p class="text-[9px] font-bold uppercase tracking-wider text-gray-600 font-semibold">İhracat Yapılan Ülke</p>
+              </div>
+
+              <!-- Stat 3: Üretim Hattı (Navy) -->
+              <div class="text-center space-y-1 md:border-r border-gray-100 last:border-0 group/stat hover:scale-105 transition-all duration-300">
+                <div class="w-10 h-10 mx-auto bg-[#000000]/5 text-[#000000] rounded-xl flex items-center justify-center text-xl mb-2 group-hover/stat:bg-[#000000] group-hover/stat:text-neutral-900 transition-all duration-300">
+                  <i class="las la-tools"></i>
+                </div>
+                <h4 class="text-lg font-black text-[#000000] tracking-tight leading-none"><span class="stat-number" data-target="10">0</span>+</h4>
+                <p class="text-[9px] font-bold uppercase tracking-wider text-gray-600 font-semibold">Üretim Hattı</p>
+              </div>
+
+              <!-- Stat 4: Ürün Çeşidi (Red) -->
+              <div class="text-center space-y-1 md:border-r border-gray-100 last:border-0 group/stat hover:scale-105 transition-all duration-300">
+                <div class="w-10 h-10 mx-auto bg-[#000000]/5 text-[#000000] rounded-xl flex items-center justify-center text-xl mb-2 group-hover/stat:bg-[#000000] group-hover/stat:text-neutral-900 transition-all duration-300">
+                  <i class="las la-box"></i>
+                </div>
+                <h4 class="text-lg font-black text-[#000000] tracking-tight leading-none"><span class="stat-number" data-target="250">0</span>+</h4>
+                <p class="text-[9px] font-bold uppercase tracking-wider text-gray-600 font-semibold">Ürün Çeşidi</p>
+              </div>
+
+              <!-- Stat 5: İş Ortağı (Navy) -->
+              <div class="text-center space-y-1 md:border-r border-gray-100 last:border-0 group/stat hover:scale-105 transition-all duration-300">
+                <div class="w-10 h-10 mx-auto bg-[#000000]/5 text-[#000000] rounded-xl flex items-center justify-center text-xl mb-2 group-hover/stat:bg-[#000000] group-hover/stat:text-neutral-900 transition-all duration-300">
+                  <i class="las la-users"></i>
+                </div>
+                <h4 class="text-lg font-black text-[#000000] tracking-tight leading-none"><span class="stat-number" data-target="100">0</span>+</h4>
+                <p class="text-[9px] font-bold uppercase tracking-wider text-gray-600 font-semibold">İş Ortağı</p>
+              </div>
+
+              <!-- Stat 6: Sektör Deneyimi (Red) -->
+              <div class="text-center space-y-1 last:border-0 group/stat hover:scale-105 transition-all duration-300">
+                <div class="w-10 h-10 mx-auto bg-[#000000]/5 text-[#000000] rounded-xl flex items-center justify-center text-xl mb-2 group-hover/stat:bg-[#000000] group-hover/stat:text-neutral-900 transition-all duration-300">
+                  <i class="las la-chart-bar"></i>
+                </div>
+                <h4 class="text-lg font-black text-[#000000] tracking-tight leading-none"><span class="stat-number" data-target="20">0</span>+ Yıl</h4>
+                <p class="text-[9px] font-bold uppercase tracking-wider text-gray-600 font-semibold">Sektör Deneyimi</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      
+
+      <!-- Brands Showcase Section -->
+      <section class="py-24 bg-gray-50/50 border-y border-gray-100 select-none">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#000000]">Geniş Ürün Yelpazesi</span>
+          <h2 class="text-3xl lg:text-5xl font-black mt-2 tracking-tight text-[#000000]">Hayatın Her Anında</h2>
+          <p class="text-gray-600 mt-4 max-w-2xl mx-auto font-light text-sm">Boni Kimya olarak bebek bezi, yetişkin bezi, hijyenik ped ve ıslak mendil kategorilerindeki tescilli global markalarımızla dünya standartlarında hijyen ve konfor sunuyoruz.</p>
+        </div>
+
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+          <div class="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-6xl mx-auto">
+            
+            <!-- Brand 1: Boni Baby -->
+            <div class="flex justify-center">
+              <a href="/urunlerimiz.html?category=bebek-bezi" class="w-36 h-36 md:w-40 md:h-40 bg-neutral-50 border border-neutral-200/70 rounded-full hover:shadow-xl hover:scale-105 hover:translate-y-[-2px] transition-all duration-300 flex items-center justify-center p-6 group shadow-sm">
+                <img src="/Markalarımız/Boni baby.jpg" alt="Boni Baby" class="max-h-full max-w-full object-contain rounded-full transform scale-95 group-hover:scale-100 transition-all duration-300 mix-blend-multiply" />
+              </a>
+            </div>
+
+            <!-- Brand 2: Boni Pomiks -->
+            <div class="flex justify-center">
+              <a href="/urunlerimiz.html?category=hijyenik-ped" class="w-36 h-36 md:w-40 md:h-40 bg-neutral-50 border border-neutral-200/70 rounded-full hover:shadow-xl hover:scale-105 hover:translate-y-[-2px] transition-all duration-300 flex items-center justify-center p-6 group shadow-sm">
+                <img src="/Markalarımız/Boni pomiks.jpg" alt="Boni Pomiks" class="max-h-full max-w-full object-contain rounded-full transform scale-95 group-hover:scale-100 transition-all duration-300 mix-blend-multiply" />
+              </a>
+            </div>
+
+            <!-- Brand 3: Baby Nice -->
+            <div class="flex justify-center">
+              <a href="/urunlerimiz.html?category=bebek-bezi" class="w-36 h-36 md:w-40 md:h-40 bg-neutral-50 border border-neutral-200/70 rounded-full hover:shadow-xl hover:scale-105 hover:translate-y-[-2px] transition-all duration-300 flex items-center justify-center p-6 group shadow-sm">
+                <img src="/Markalarımız/babynice.jpg" alt="Baby Nice" class="max-h-full max-w-full object-contain rounded-full transform scale-95 group-hover:scale-100 transition-all duration-300 mix-blend-multiply" />
+              </a>
+            </div>
+
+            <!-- Brand 4: Boni Bravo -->
+            <div class="flex justify-center">
+              <a href="/urunlerimiz.html?category=yetiskin-bezi" class="w-36 h-36 md:w-40 md:h-40 bg-neutral-50 border border-neutral-200/70 rounded-full hover:shadow-xl hover:scale-105 hover:translate-y-[-2px] transition-all duration-300 flex items-center justify-center p-6 group shadow-sm">
+                <img src="/Markalarımız/boni bravo.jpg" alt="Boni Bravo" class="max-h-full max-w-full object-contain rounded-full transform scale-95 group-hover:scale-100 transition-all duration-300 mix-blend-multiply" />
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Brochures & Catalogues Section -->
+      <section class="py-24 bg-white border-b border-gray-100 select-none scroll-mt-28 lg:scroll-mt-36" id="kataloglarimiz">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#000000]">İndirilebilir Dökümanlar</span>
+          <h2 class="text-3xl lg:text-5xl font-black mt-2 tracking-tight text-[#000000]">Katalog &amp; Broşürlerimiz</h2>
+          <p class="text-gray-600 mt-4 max-w-2xl mx-auto font-light text-sm">
+            Ürün gruplarımızın teknik detaylarını, ambalaj içeriklerini ve kurumsal kataloglarımızı PDF formatında inceleyebilir ve indirebilirsiniz.
+          </p>
+        </div>
+
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+            
+            <!-- Brochure 1: Boni Kimya Genel Katalog -->
+            <div class="group bg-[#fcfcf9] rounded-3xl p-4 border border-gray-100/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:translate-y-[-4px] relative overflow-hidden">
+              <div class="relative w-full aspect-[1/1.41] bg-white rounded-2xl overflow-hidden border border-gray-100/60 mb-4 flex items-center justify-center">
+                <!-- PDF Canvas Container -->
+                <div class="pdf-thumbnail w-full h-full flex items-center justify-center relative" data-pdf="/Ürünlerimiz/Broşür/BONI KIMYA CAT..pdf">
+                  <!-- Loading Spinner -->
+                  <div class="absolute inset-0 flex items-center justify-center bg-white z-10 pdf-loading">
+                    <i class="las la-spinner la-spin text-2xl text-[#000000]"></i>
+                  </div>
+                  <canvas class="w-full h-full object-cover opacity-0 transition-opacity duration-300"></canvas>
+                </div>
+                <!-- Hover Overlay -->
+                <div class="absolute inset-0 bg-[#000000]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none z-20">
+                  <span class="px-3.5 py-2 bg-white text-[#000000] font-bold text-[10px] rounded-xl shadow-md flex items-center space-x-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <i class="las la-file-download text-xs"></i>
+                    <span>Kataloğu İndir</span>
+                  </span>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-[11px] font-black text-[#000000] uppercase tracking-tight line-clamp-2 leading-snug min-h-[32px] group-hover:text-[#000000] transition-colors">Boni Kimya Genel Katalog</h4>
+                  <p class="text-[9px] text-gray-600 font-semibold mt-1 font-light flex items-center justify-between">
+                    <span>PDF Katalog</span>
+                    <span class="font-medium">7.2 MB</span>
+                  </p>
+                </div>
+                <a href="/Ürünlerimiz/Broşür/BONI KIMYA CAT..pdf" download="Boni_Kimya_Genel_Katalog.pdf" class="mt-4 w-full py-2.5 bg-white hover:bg-[#000000] hover:text-neutral-900 text-[#000000] text-[10px] font-black uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 border border-gray-100 shadow-sm cursor-pointer">
+                  <i class="las la-download"></i>
+                  <span>İndir (7.2 MB)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Brochure 2: Baby Nice -->
+            <div class="group bg-[#fcfcf9] rounded-3xl p-4 border border-gray-100/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:translate-y-[-4px] relative overflow-hidden">
+              <div class="relative w-full aspect-[1/1.41] bg-white rounded-2xl overflow-hidden border border-gray-100/60 mb-4 flex items-center justify-center">
+                <div class="pdf-thumbnail w-full h-full flex items-center justify-center relative" data-pdf="/Ürünlerimiz/Broşür/BABY NICE.pdf">
+                  <div class="absolute inset-0 flex items-center justify-center bg-white z-10 pdf-loading">
+                    <i class="las la-spinner la-spin text-2xl text-[#000000]"></i>
+                  </div>
+                  <canvas class="w-full h-full object-cover opacity-0 transition-opacity duration-300"></canvas>
+                </div>
+                <div class="absolute inset-0 bg-[#000000]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none z-20">
+                  <span class="px-3.5 py-2 bg-white text-[#000000] font-bold text-[10px] rounded-xl shadow-md flex items-center space-x-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <i class="las la-file-download text-xs"></i>
+                    <span>Broşürü İndir</span>
+                  </span>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-[11px] font-black text-[#000000] uppercase tracking-tight line-clamp-2 leading-snug min-h-[32px] group-hover:text-[#000000] transition-colors">Baby Nice Broşür</h4>
+                  <p class="text-[9px] text-gray-600 font-semibold mt-1 font-light flex items-center justify-between">
+                    <span>PDF Broşür</span>
+                    <span class="font-medium">1.4 MB</span>
+                  </p>
+                </div>
+                <a href="/Ürünlerimiz/Broşür/BABY NICE.pdf" download="Baby_Nice_Brosur.pdf" class="mt-4 w-full py-2.5 bg-white hover:bg-[#000000] hover:text-neutral-900 text-[#000000] text-[10px] font-black uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 border border-gray-100 shadow-sm cursor-pointer">
+                  <i class="las la-download"></i>
+                  <span>İndir (1.4 MB)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Brochure 3: Boni Bravo -->
+            <div class="group bg-[#fcfcf9] rounded-3xl p-4 border border-gray-100/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:translate-y-[-4px] relative overflow-hidden">
+              <div class="relative w-full aspect-[1/1.41] bg-white rounded-2xl overflow-hidden border border-gray-100/60 mb-4 flex items-center justify-center">
+                <div class="pdf-thumbnail w-full h-full flex items-center justify-center relative" data-pdf="/Ürünlerimiz/Broşür/BONI BRAVO.pdf">
+                  <div class="absolute inset-0 flex items-center justify-center bg-white z-10 pdf-loading">
+                    <i class="las la-spinner la-spin text-2xl text-[#000000]"></i>
+                  </div>
+                  <canvas class="w-full h-full object-cover opacity-0 transition-opacity duration-300"></canvas>
+                </div>
+                <div class="absolute inset-0 bg-[#000000]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none z-20">
+                  <span class="px-3.5 py-2 bg-white text-[#000000] font-bold text-[10px] rounded-xl shadow-md flex items-center space-x-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <i class="las la-file-download text-xs"></i>
+                    <span>Broşürü İndir</span>
+                  </span>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-[11px] font-black text-[#000000] uppercase tracking-tight line-clamp-2 leading-snug min-h-[32px] group-hover:text-[#000000] transition-colors">Boni Bravo Broşür</h4>
+                  <p class="text-[9px] text-gray-600 font-semibold mt-1 font-light flex items-center justify-between">
+                    <span>PDF Broşür</span>
+                    <span class="font-medium">1.7 MB</span>
+                  </p>
+                </div>
+                <a href="/Ürünlerimiz/Broşür/BONI BRAVO.pdf" download="Boni_Bravo_Brosur.pdf" class="mt-4 w-full py-2.5 bg-white hover:bg-[#000000] hover:text-neutral-900 text-[#000000] text-[10px] font-black uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 border border-gray-100 shadow-sm cursor-pointer">
+                  <i class="las la-download"></i>
+                  <span>İndir (1.7 MB)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Brochure 4: Boni -->
+            <div class="group bg-[#fcfcf9] rounded-3xl p-4 border border-gray-100/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:translate-y-[-4px] relative overflow-hidden">
+              <div class="relative w-full aspect-[1/1.41] bg-white rounded-2xl overflow-hidden border border-gray-100/60 mb-4 flex items-center justify-center">
+                <div class="pdf-thumbnail w-full h-full flex items-center justify-center relative" data-pdf="/Ürünlerimiz/Broşür/BONI.pdf">
+                  <div class="absolute inset-0 flex items-center justify-center bg-white z-10 pdf-loading">
+                    <i class="las la-spinner la-spin text-2xl text-[#000000]"></i>
+                  </div>
+                  <canvas class="w-full h-full object-cover opacity-0 transition-opacity duration-300"></canvas>
+                </div>
+                <div class="absolute inset-0 bg-[#000000]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none z-20">
+                  <span class="px-3.5 py-2 bg-white text-[#000000] font-bold text-[10px] rounded-xl shadow-md flex items-center space-x-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <i class="las la-file-download text-xs"></i>
+                    <span>Broşürü İndir</span>
+                  </span>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-[11px] font-black text-[#000000] uppercase tracking-tight line-clamp-2 leading-snug min-h-[32px] group-hover:text-[#000000] transition-colors">Boni Bebek Bezi Broşür</h4>
+                  <p class="text-[9px] text-gray-600 font-semibold mt-1 font-light flex items-center justify-between">
+                    <span>PDF Broşür</span>
+                    <span class="font-medium">1.1 MB</span>
+                  </p>
+                </div>
+                <a href="/Ürünlerimiz/Broşür/BONI.pdf" download="Boni_Brosur.pdf" class="mt-4 w-full py-2.5 bg-white hover:bg-[#000000] hover:text-neutral-900 text-[#000000] text-[10px] font-black uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 border border-gray-100 shadow-sm cursor-pointer">
+                  <i class="las la-download"></i>
+                  <span>İndir (1.1 MB)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Brochure 5: Pomiks -->
+            <div class="group bg-[#fcfcf9] rounded-3xl p-4 border border-gray-100/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:translate-y-[-4px] relative overflow-hidden">
+              <div class="relative w-full aspect-[1/1.41] bg-white rounded-2xl overflow-hidden border border-gray-100/60 mb-4 flex items-center justify-center">
+                <div class="pdf-thumbnail w-full h-full flex items-center justify-center relative" data-pdf="/Ürünlerimiz/Broşür/POMIKS.pdf">
+                  <div class="absolute inset-0 flex items-center justify-center bg-white z-10 pdf-loading">
+                    <i class="las la-spinner la-spin text-2xl text-[#000000]"></i>
+                  </div>
+                  <canvas class="w-full h-full object-cover opacity-0 transition-opacity duration-300"></canvas>
+                </div>
+                <div class="absolute inset-0 bg-[#000000]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none z-20">
+                  <span class="px-3.5 py-2 bg-white text-[#000000] font-bold text-[10px] rounded-xl shadow-md flex items-center space-x-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <i class="las la-file-download text-xs"></i>
+                    <span>Broşürü İndir</span>
+                  </span>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-[11px] font-black text-[#000000] uppercase tracking-tight line-clamp-2 leading-snug min-h-[32px] group-hover:text-[#000000] transition-colors">Pomiks Ürün Broşür</h4>
+                  <p class="text-[9px] text-gray-600 font-semibold mt-1 font-light flex items-center justify-between">
+                    <span>PDF Broşür</span>
+                    <span class="font-medium">1.6 MB</span>
+                  </p>
+                </div>
+                <a href="/Ürünlerimiz/Broşür/POMIKS.pdf" download="Pomiks_Brosur.pdf" class="mt-4 w-full py-2.5 bg-white hover:bg-[#000000] hover:text-neutral-900 text-[#000000] text-[10px] font-black uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 border border-gray-100 shadow-sm cursor-pointer">
+                  <i class="las la-download"></i>
+                  <span>İndir (1.6 MB)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Brochure 6: Pommy -->
+            <div class="group bg-[#fcfcf9] rounded-3xl p-4 border border-gray-100/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:translate-y-[-4px] relative overflow-hidden">
+              <div class="relative w-full aspect-[1/1.41] bg-white rounded-2xl overflow-hidden border border-gray-100/60 mb-4 flex items-center justify-center">
+                <div class="pdf-thumbnail w-full h-full flex items-center justify-center relative" data-pdf="/Ürünlerimiz/Broşür/POMMY.pdf">
+                  <div class="absolute inset-0 flex items-center justify-center bg-white z-10 pdf-loading">
+                    <i class="las la-spinner la-spin text-2xl text-[#000000]"></i>
+                  </div>
+                  <canvas class="w-full h-full object-cover opacity-0 transition-opacity duration-300"></canvas>
+                </div>
+                <div class="absolute inset-0 bg-[#000000]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none z-20">
+                  <span class="px-3.5 py-2 bg-white text-[#000000] font-bold text-[10px] rounded-xl shadow-md flex items-center space-x-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <i class="las la-file-download text-xs"></i>
+                    <span>Broşürü İndir</span>
+                  </span>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-[11px] font-black text-[#000000] uppercase tracking-tight line-clamp-2 leading-snug min-h-[32px] group-hover:text-[#000000] transition-colors">Pommy Bebek Bezi Broşür</h4>
+                  <p class="text-[9px] text-gray-600 font-semibold mt-1 font-light flex items-center justify-between">
+                    <span>PDF Broşür</span>
+                    <span class="font-medium">1.7 MB</span>
+                  </p>
+                </div>
+                <a href="/Ürünlerimiz/Broşür/POMMY.pdf" download="Pommy_Brosur.pdf" class="mt-4 w-full py-2.5 bg-white hover:bg-[#000000] hover:text-neutral-900 text-[#000000] text-[10px] font-black uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 border border-gray-100 shadow-sm cursor-pointer">
+                  <i class="las la-download"></i>
+                  <span>İndir (1.7 MB)</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Instagram Showcase Section -->
+      <section class="py-24 bg-gradient-to-b from-white to-gray-50/30 relative overflow-hidden select-none scroll-mt-28 lg:scroll-mt-36" id="instagramShowcase">
+        <!-- Instagram gradient background glow -->
+        <div class="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-[#f9ce34]/20 via-[#000000]/20 to-[#6228d7]/20 rounded-full blur-[160px] opacity-40 pointer-events-none"></div>
+        <div class="absolute left-[-10%] top-[10%] w-[350px] h-[350px] bg-gradient-to-tr from-[#6228d7]/10 to-[#000000]/10 rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+        
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
+            
+            <!-- Left: Text content with premium design -->
+            <div class="lg:col-span-5 space-y-10">
+              <div class="space-y-4">
+                <a href="https://instagram.com/bonikimya" target="_blank" class="inline-flex items-center space-x-2 bg-gradient-to-r from-[#f9ce34]/10 via-[#000000]/10 to-[#6228d7]/10 text-[#000000] px-4.5 py-2.5 rounded-full text-xs font-black tracking-widest uppercase hover:scale-105 hover:shadow-sm border border-[#000000]/10 transition-all duration-300">
+                  <i class="lab la-instagram text-base"></i>
+                  <span>@bonikimya</span>
+                </a>
+                <h2 class="text-4xl lg:text-5xl font-black tracking-tight text-[#000000] leading-tight">Sosyal Medyada Biz</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#f9ce34] via-[#000000] to-[#6228d7] rounded-full"></div>
+                
+                <div class="text-gray-600 text-sm font-light leading-relaxed space-y-4">
+                  <p>
+                    Boni Kimya olarak üretim tesislerimizdeki yenilikleri, ürün lansmanlarımızı ve global distribütörlük ağlarımızdan en son gelişmeleri Instagram sayfamızda paylaşıyoruz. 
+                  </p>
+                  <p>
+                    Siz de bizi takip ederek en güncel kurumsal gelişmelerden haberdar olabilir, özel üretim ve Private Label projelerimizi inceleyebilirsiniz.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Highlights Story Row -->
+              <div class="space-y-3">
+                <h4 class="text-[10px] font-black text-gray-600 font-semibold uppercase tracking-widest flex items-center">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#000000] mr-2"></span>Öne Çıkan Hikayeler
+                </h4>
+                <div class="flex items-center space-x-5 overflow-x-auto pb-2 scrollbar-none select-none">
+                  <!-- Story 1 -->
+                  <a href="https://instagram.com/bonikimya" target="_blank" class="flex flex-col items-center space-y-1.5 shrink-0 group/story">
+                    <div class="w-14 h-14 rounded-full p-[2.5px] bg-gradient-to-tr from-[#f9ce34] via-[#000000] to-[#6228d7] group-hover/story:scale-105 transition-transform duration-300 shadow-md">
+                      <div class="w-full h-full rounded-full bg-white p-[2px]">
+                        <img src="/categories/boni_kimya_fabrika.png" alt="Üretim" class="w-full h-full object-cover rounded-full filter grayscale-[20%] group-hover/story:grayscale-0 transition-all duration-300" />
+                      </div>
+                    </div>
+                    <span class="text-[9px] font-extrabold text-[#000000] tracking-wide group-hover/story:text-[#000000] transition-colors duration-300">ÜRETİM</span>
+                  </a>
+                  <!-- Story 2 -->
+                  <a href="https://instagram.com/bonikimya" target="_blank" class="flex flex-col items-center space-y-1.5 shrink-0 group/story">
+                    <div class="w-14 h-14 rounded-full p-[2.5px] bg-gradient-to-tr from-[#f9ce34] via-[#000000] to-[#6228d7] group-hover/story:scale-105 transition-transform duration-300 shadow-md">
+                      <div class="w-full h-full rounded-full bg-white p-[2px]">
+                        <img src="/categories/bebek_bezi.png" alt="Ürünlerimiz" class="w-full h-full object-cover rounded-full filter grayscale-[20%] group-hover/story:grayscale-0 transition-all duration-300" />
+                      </div>
+                    </div>
+                    <span class="text-[9px] font-extrabold text-[#000000] tracking-wide group-hover/story:text-[#000000] transition-colors duration-300">ÜRÜNLERİMİZ</span>
+                  </a>
+                  <!-- Story 3 -->
+                  <a href="https://instagram.com/bonikimya" target="_blank" class="flex flex-col items-center space-y-1.5 shrink-0 group/story">
+                    <div class="w-14 h-14 rounded-full p-[2.5px] bg-gradient-to-tr from-[#f9ce34] via-[#000000] to-[#6228d7] group-hover/story:scale-105 transition-transform duration-300 shadow-md">
+                      <div class="w-full h-full rounded-full bg-white p-[2px]">
+                        <img src="/categories/arge.png" alt="Ar-Ge" class="w-full h-full object-cover rounded-full filter grayscale-[20%] group-hover/story:grayscale-0 transition-all duration-300" />
+                      </div>
+                    </div>
+                    <span class="text-[9px] font-extrabold text-[#000000] tracking-wide group-hover/story:text-[#000000] transition-colors duration-300">AR-GE</span>
+                  </a>
+                  <!-- Story 4 -->
+                  <a href="https://instagram.com/bonikimya" target="_blank" class="flex flex-col items-center space-y-1.5 shrink-0 group/story">
+                    <div class="w-14 h-14 rounded-full p-[2.5px] bg-gradient-to-tr from-[#f9ce34] via-[#000000] to-[#6228d7] group-hover/story:scale-105 transition-transform duration-300 shadow-md">
+                      <div class="w-full h-full rounded-full bg-white p-[2px]">
+                        <img src="/categories/ihracat.png" alt="Küresel İhracat" class="w-full h-full object-cover rounded-full filter grayscale-[20%] group-hover/story:grayscale-0 transition-all duration-300" />
+                      </div>
+                    </div>
+                    <span class="text-[9px] font-extrabold text-[#000000] tracking-wide group-hover/story:text-[#000000] transition-colors duration-300">KÜRESEL</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Stats & Interactive Cards -->
+              <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-100">
+                <!-- Stat Card 1 -->
+                <div class="bg-white/40 backdrop-blur-sm border border-gray-100 p-4 rounded-2xl shadow-sm hover:shadow-md hover:border-[#000000]/20 hover:-translate-y-0.5 transition-all duration-300 text-center flex flex-col justify-center space-y-1 group">
+                  <div class="w-7 h-7 rounded-xl bg-gradient-to-tr from-[#f9ce34]/10 to-[#000000]/10 text-[#000000] flex items-center justify-center text-xs mx-auto group-hover:scale-105 transition-transform duration-300">
+                    <i class="las la-images"></i>
+                  </div>
+                  <span class="block text-xl font-black text-[#000000] pt-1">320</span>
+                  <span class="text-[9px] font-extrabold uppercase tracking-wider text-gray-600 font-semibold">Gönderi</span>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="bg-white/40 backdrop-blur-sm border border-gray-100 p-4 rounded-2xl shadow-sm hover:shadow-md hover:border-[#000000]/20 hover:-translate-y-0.5 transition-all duration-300 text-center flex flex-col justify-center space-y-1 group">
+                  <div class="w-7 h-7 rounded-xl bg-gradient-to-tr from-[#000000]/10 to-[#6228d7]/10 text-[#000000] flex items-center justify-center text-xs mx-auto group-hover:scale-105 transition-transform duration-300">
+                    <i class="las la-users"></i>
+                  </div>
+                  <span class="block text-xl font-black text-[#000000] pt-1">617</span>
+                  <span class="text-[9px] font-extrabold uppercase tracking-wider text-gray-600 font-semibold">Takipçi</span>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="bg-white/40 backdrop-blur-sm border border-gray-100 p-4 rounded-2xl shadow-sm hover:shadow-md hover:border-[#000000]/20 hover:-translate-y-0.5 transition-all duration-300 text-center flex flex-col justify-center space-y-1 group">
+                  <div class="w-7 h-7 rounded-xl bg-gradient-to-tr from-[#6228d7]/10 to-[#f9ce34]/10 text-[#000000] flex items-center justify-center text-xs mx-auto group-hover:scale-105 transition-transform duration-300">
+                    <i class="las la-user-plus"></i>
+                  </div>
+                  <span class="block text-xl font-black text-[#000000] pt-1">7</span>
+                  <span class="text-[9px] font-extrabold uppercase tracking-wider text-gray-600 font-semibold">Takip</span>
+                </div>
+              </div>
+
+              <!-- CTA Button -->
+              <div class="pt-2 flex">
+                <a href="https://instagram.com/bonikimya" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#f9ce34] via-[#000000] to-[#6228d7] text-neutral-900 font-extrabold text-xs uppercase tracking-wider rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer relative overflow-hidden group">
+                  <span class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+                  Takip Edin &amp; Profilimizi Ziyaret Et
+                  <i class="las la-external-link-alt ml-2 text-sm"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Interactive 3D/Floating Phone Bezel -->
+            <div class="lg:col-span-7 flex justify-center relative">
+              <!-- Background glowing circles -->
+              <div class="absolute w-80 h-80 rounded-full bg-[#000000]/10 blur-[80px] -z-10 animate-pulse"></div>
+              
+              <div class="relative group/phone-container max-w-[340px] w-full">
+                <!-- Outer Bezel / Phone Shell using HTML/CSS for premium 3D look -->
+                <div class="relative bg-[#080808] p-3.5 rounded-[3rem] shadow-2xl border-[4px] border-[#222] transition-all duration-500 ease-out group-hover/phone-container:scale-[1.03] group-hover/phone-container:-rotate-1 hover:shadow-pink-500/10">
+                  <!-- Screen -->
+                  <div class="relative rounded-[2.2rem] overflow-hidden bg-black border border-black/40">
+                    <img src="/categories/bonikimya_instagram.jpg" alt="Boni Kimya Instagram Profile" class="w-full h-auto object-cover" />
+                  </div>
+                  
+                  <!-- Screen Glare/Reflection Effect -->
+                  <div class="absolute inset-0 rounded-[3rem] bg-gradient-to-tr from-white/0 via-white/5 to-white/10 pointer-events-none"></div>
+                </div>
+
+                <!-- Floating Badges to create depth -->
+                <!-- Floating Badge 1 (Top Left) -->
+                <div class="absolute -left-10 top-16 bg-white/95 backdrop-blur-sm border border-gray-100 rounded-2xl p-3 shadow-xl flex items-center space-x-2.5 animate-bounce [animation-duration:5s] hover:scale-105 transition-transform duration-300 border-white/20">
+                  <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#000000] to-[#6228d7] flex items-center justify-center text-neutral-900">
+                    <i class="las la-heart text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="block text-[10px] font-black text-[#000000] leading-none">Canlı Paylaşım</span>
+                    <span class="text-[8px] text-gray-600 font-semibold font-light mt-0.5">Fabrika İçi Görüntüler</span>
+                  </div>
+                </div>
+
+                <!-- Floating Badge 2 (Bottom Right) -->
+                <div class="absolute -right-10 bottom-16 bg-white/95 backdrop-blur-sm border border-gray-100 rounded-2xl p-3 shadow-xl flex items-center space-x-2.5 animate-bounce [animation-duration:6s] hover:scale-105 transition-transform duration-300 border-white/20">
+                  <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-[#000000]">
+                    <i class="las la-user-check text-sm text-[#000000]"></i>
+                  </div>
+                  <div>
+                    <span class="block text-[10px] font-black text-[#000000] leading-none">Resmi Hesap</span>
+                    <span class="text-[8px] text-gray-600 font-semibold font-light mt-0.5">Boni Kimya San. A.Ş.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+<!-- SVG Cloud/Wave Divider for Playful Theme -->
+    <div class="relative w-full overflow-hidden leading-[0] bg-transparent -mb-1 mt-12">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[60px]">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,88.43,26.85,150.31,43.74,220.67,65.05,321.39,56.44Z" class="fill-[#000000]"></path>
+      </svg>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#000000] text-white pt-12 pb-16 relative">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+        
+        <!-- Row 1: Fun & Trust Badges -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-neutral-800 text-center lg:text-left">
+          
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-neutral-900 transition-all duration-300 shadow-md">
+              <i class="las la-baby text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-neutral-900">Ultra Yumuşak & Kuru</h5>
+              <p class="text-xs text-gray-600 font-semibold font-light mt-1">Bebek cildi için ekstra pamuksu doku ve sızdırmaz bariyerler.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-neutral-900 transition-all duration-300 shadow-md">
+              <i class="las la-briefcase-medical text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-neutral-900">Medikal Standartlar</h5>
+              <p class="text-xs text-gray-600 font-semibold font-light mt-1">Yetişkin bezlerinde yüksek emicilik ve ISO 13485 medikal onay.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-neutral-900 transition-all duration-300 shadow-md">
+              <i class="las la-shield-alt text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-neutral-900">Dermatolojik Onay</h5>
+              <p class="text-xs text-gray-600 font-semibold font-light mt-1">Hassas cilt tipleri için test edilmiş, hipoalerjenik ve nefes alan yapı.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-neutral-900 transition-all duration-300 shadow-md">
+              <i class="las la-leaf text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-neutral-900">Doğa Dostu Üretim</h5>
+              <p class="text-xs text-gray-600 font-semibold font-light mt-1">%100 geri dönüştürülebilir ambalajlar ve sürdürülebilir vizyon.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: Detailed Links Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-16">
+          
+          <!-- Column 1: Brand Intro -->
+          <div class="lg:col-span-2 space-y-6">
+            <img src="/logo.png" alt="Boni Kimya Logo" class="h-20 w-auto object-contain brightness-0 invert" />
+            <p class="text-gray-600 font-semibold text-sm leading-relaxed max-w-sm font-light">
+              Boni Kimya Sağlık Ürünleri A.Ş., bebek bakımından yetişkin hasta bezine kadar geniş bir yelpazede yüksek standartlı, dermatolojik onaylı hijyen çözümleri üretmektedir.
+            </p>
+            
+            <!-- Newsletter Subscription Form -->
+            <div class="space-y-3 max-w-sm">
+              <h6 class="text-xs font-extrabold uppercase tracking-widest text-neutral-900">E-Bülten Üyeliği</h6>
+              <form class="flex items-center bg-white/5 border border-white/10 rounded-2xl p-1 focus-within:border-pembe transition-colors">
+                <input type="email" placeholder="E-Posta adresiniz" required class="w-full bg-transparent px-3 py-2 text-xs text-neutral-900 placeholder-gray-500 focus:outline-none" />
+                <button type="submit" class="bg-pembe hover:bg-white hover:text-siyah text-neutral-900 rounded-xl w-8 h-8 flex items-center justify-center transition-colors cursor-pointer"><i class="las la-paper-plane text-sm"></i></button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Column 2: Bebek Bakım Ürünleri -->
+          <div>
+            <h4 class="text-xs font-extrabold uppercase tracking-widest text-neutral-900 mb-6">Bebek Bakım</h4>
+            <ul class="space-y-3 font-light text-sm text-gray-600 font-semibold">
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Bebek Bezleri</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Külot Bezler</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Islak Bebek Mendili</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Bebek Şampuanı</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Beden Seçim Rehberi</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Yetişkin & Hasta Bakım -->
+          <div>
+            <h4 class="text-xs font-extrabold uppercase tracking-widest text-neutral-900 mb-6">Yetişkin & Hasta</h4>
+            <ul class="space-y-3 font-light text-sm text-gray-600 font-semibold">
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Yetişkin Hasta Bezi</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Emici Külot Bezler</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Yatak Koruyucu Örtü</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Mesane Pedleri</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Kullanım & Seçim Rehberi</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Kurumsal & Destek -->
+          <div>
+            <h4 class="text-xs font-extrabold uppercase tracking-widest text-neutral-900 mb-6">Kurumsal & Bilgi</h4>
+            <ul class="space-y-3 font-light text-sm text-gray-600 font-semibold">
+              <li><a href="/hakkimizda.html" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Hakkımızda</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Kalite Belgelerimiz</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Sürdürülebilirlik</a></li>
+              <li><a href="#" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">Kariyer (İK)</a></li>
+              <li><a href="/kvkk.html" class="flex items-center hover:text-neutral-900 hover:translate-x-1.5 transition-all duration-300">KVKK ve Çerezler</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Row 3: Contact Details & Social Icons -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 border-t border-neutral-800 items-center">
+          
+          <!-- Contact Numbers -->
+          <div class="lg:col-span-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-xs text-gray-600 font-semibold font-light">
+            <span class="flex items-center"><i class="las la-phone text-lg text-pembe mr-2"></i> +90 212 886 31 00</span>
+            <span class="flex items-center"><i class="las la-envelope text-lg text-pembe mr-2"></i> info@bonikimya.com</span>
+            <span class="flex items-center"><i class="las la-map-marker text-lg text-pembe mr-2"></i> Akşemseddin, 211. Sk. No:2 Esenyurt, Istanbul, Turkey 34510</span>
+          </div>
+
+          <!-- Social links -->
+          <div class="lg:col-span-4 flex justify-center lg:justify-end space-x-4">
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-semibold hover:bg-black hover:text-neutral-900 hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-facebook-f text-base"></i>
+            </a>
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-semibold hover:bg-black hover:text-neutral-900 hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-twitter text-base"></i>
+            </a>
+            <a href="https://www.instagram.com/bonikimya/" target="_blank" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-semibold hover:bg-black hover:text-neutral-900 hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-instagram text-base"></i>
+            </a>
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-semibold hover:bg-black hover:text-neutral-900 hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-youtube text-base"></i>
+            </a>
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-semibold hover:bg-black hover:text-neutral-900 hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-linkedin-in text-base"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Copyright Area -->
+        <div class="mt-8 pt-6 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-600 font-semibold font-light">
+          <div class="flex items-center space-x-2.5">
+            <span class="inline-flex items-center space-x-1 bg-white/5 border border-white/10 rounded-full px-2.5 py-1 text-[9px] font-black uppercase text-emerald-400 tracking-wider">
+              <i class="las la-check-circle text-[10px]"></i>
+              <span>Tescilli Küresel Üretici</span>
+            </span>
+            <p>Boni Kimya Sağlık Ürünleri A.Ş. © 2026 Tüm Hakları Saklıdır.</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="#" class="hover:text-neutral-900 transition-colors">Kullanım Koşulları</a>
+            <span>•</span>
+            <a href="#" class="hover:text-neutral-900 transition-colors">Gizlilik Politikası</a>
+            <span>•</span>
+            <a href="#" class="hover:text-neutral-900 transition-colors">Çerez Ayarları</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="fixed bottom-6 left-6 max-w-sm w-full bg-siyah text-neutral-900 rounded-3xl p-6 shadow-2xl z-50 border border-neutral-800 animate__animated animate__fadeInLeft">
+      <h5 class="text-sm font-bold mb-2">Çerez Politikası</h5>
+      <p class="text-xs text-gray-600 font-semibold leading-relaxed mb-4">
+        Boni Kimya olarak internet sitemizde çerez kullanmaktayız. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş sayılırsınız.
+      </p>
+      <div class="flex items-center space-x-3">
+        <button id="acceptCookiesBtn" class="px-5 py-2 bg-white text-siyah text-xs font-bold rounded-xl hover:bg-pembe hover:text-neutral-900 transition-colors cursor-pointer">Kabul Et</button>
+        <a href="#" class="text-xs text-gray-600 font-semibold hover:text-neutral-900 transition-colors underline">Bilgi Al</a>
+      </div>
+    </div>
+
+    <!-- Dual-Structure Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <!-- Backdrop -->
+      <div class="fixed inset-0 bg-black/60 backdrop-blur-md transition-opacity duration-300 opacity-0" id="contactModalOverlay"></div>
+      
+      <!-- Modal Container -->
+      <div class="flex min-h-full items-center justify-center p-4 text-center">
+        <div class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-2xl transition-all duration-300 sm:my-8 sm:w-full sm:max-w-xl scale-95 opacity-0 border border-gray-100" id="contactModalCard">
+          
+          <!-- Close Button -->
+          <button id="closeContactModalBtn" class="absolute right-6 top-6 text-neutral-400 hover:text-gray-600 transition-colors p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+            <i class="las la-times text-xl"></i>
+          </button>
+
+          <div class="bg-[#000000] p-8 text-neutral-900">
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Bizimle İletişime Geçin</span>
+            <h3 class="text-white font-extrabold">Hızlı Teklif & Bilgi Formu</h3>
+            <p class="text-neutral-900/70 text-xs mt-1.5 font-light">Formu doldurarak ekibimizin size en kısa sürede dönüş yapmasını sağlayabilirsiniz.</p>
+          </div>
+
+          <!-- Form Tabs -->
+          <div class="px-8 pt-6">
+            <div class="flex bg-gray-50 p-1 rounded-2xl relative border border-gray-100">
+              <!-- Animated Slider Background -->
+              <div class="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] bg-white shadow-md rounded-xl transition-transform duration-300" id="tabSlider"></div>
+              
+              <button id="tabBireysel" class="relative z-10 w-1/2 py-3 text-xs font-bold uppercase tracking-wider text-siyah transition-colors duration-300 cursor-pointer">Bireysel İletişim</button>
+              <button id="tabKurumsal" class="relative z-10 w-1/2 py-3 text-xs font-bold uppercase tracking-wider text-gray-600 font-semibold transition-colors duration-300 cursor-pointer">Kurumsal İletişim</button>
+            </div>
+          </div>
+
+          <!-- Forms Wrapper -->
+          <div class="p-8">
+            <form id="dualContactForm">
+              <!-- Shared Hidden Input -->
+              <input type="hidden" name="form_type" id="formTypeInput" value="bireysel" />
+
+              <div class="space-y-4">
+                
+                <!-- FIELD: Name / Contact Person -->
+                <div>
+                  <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2" id="labelName">Adınız Soyadınız *</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-neutral-400"><i class="las la-user"></i></span>
+                    <input type="text" name="name" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Ad Soyad" />
+                  </div>
+                </div>
+
+                <!-- FIELD: Company Name (Corporate Only) -->
+                <div id="fieldCompany" class="hidden transition-all duration-300">
+                  <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2">Firma Ünvanı *</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-neutral-400"><i class="las la-building"></i></span>
+                    <input type="text" name="company" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Firma Adı" />
+                  </div>
+                </div>
+
+                <!-- FIELDS Group: Email & Phone -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2">E-Posta *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-neutral-400"><i class="las la-envelope"></i></span>
+                      <input type="email" name="email" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="ornek@eposta.com" />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2">Telefon *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-neutral-400"><i class="las la-phone"></i></span>
+                      <input type="tel" name="phone" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="0555 555 5555" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FIELDS Group: Sector & Tax Info (Corporate Only) -->
+                <div id="fieldCorporateGroup" class="hidden grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-300">
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2">Sektör *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-neutral-400"><i class="las la-tag"></i></span>
+                      <input type="text" name="sector" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Gıda, Sağlık, Perakende vb." />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2">Vergi Dairesi & No</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-neutral-400"><i class="las la-file-invoice"></i></span>
+                      <input type="text" name="tax_info" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Daire / Vergi No" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FIELD: Subject (Bireysel Only) -->
+                <div id="fieldSubject" class="transition-all duration-300">
+                  <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2">Konu *</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-neutral-400"><i class="las la-info-circle"></i></span>
+                    <input type="text" name="subject" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Mesaj Konusu" />
+                  </div>
+                </div>
+
+                <!-- FIELD: Message -->
+                <div>
+                  <label class="block text-xs font-extrabold text-gray-600 font-semibold uppercase tracking-wider mb-2" id="labelMessage">Mesajınız *</label>
+                  <textarea name="message" required rows="4" class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all resize-none" placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
+                </div>
+
+              </div>
+
+              <!-- Submit Area -->
+              <div class="mt-6 flex items-center justify-between">
+                <p class="text-[10px] text-gray-600 font-semibold font-light max-w-[60%]">* Doldurulması zorunlu alanlar. Bilgileriniz KVKK kapsamında korunmaktadır.</p>
+                <button type="submit" class="px-8 py-3.5 bg-[#000000] hover:bg-[#000000] text-white font-bold rounded-2xl transition-colors duration-300 shadow-lg cursor-pointer text-xs uppercase tracking-wider flex items-center">
+                  <span>Gönder</span>
+                  <i class="las la-paper-plane ml-2 text-sm" id="submitIcon"></i>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating B2B Action Widget -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 z-40 hidden md:block">
+      <button id="floatingB2BWidget" class="bg-[#000000] hover:bg-[#000000] text-white flex items-center space-x-2 py-3.5 px-4 rounded-r-2xl shadow-[0_10px_30px_rgba(26,35,90,0.3)] border-t border-r border-b border-white/10 hover:shadow-[0_10px_30px_rgba(234,0,5,0.4)] transition-all duration-300 transform translate-x-0 cursor-pointer group">
+        <i class="las la-industry text-lg animate-pulse"></i>
+        <span class="text-[10px] font-black uppercase tracking-wider max-w-0 overflow-hidden group-hover:max-w-[150px] transition-all duration-500 ease-in-out whitespace-nowrap">B2B Teklif &amp; Numune</span>
+      </button>
+    </div>
+
+    <!-- Corporate Video Modal Lightbox -->
+    <div id="videoModal" class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+      <div id="videoModalOverlay" class="absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer"></div>
+      
+      <div class="relative bg-black rounded-3xl w-[90%] max-w-4xl overflow-hidden shadow-2xl z-10 transform scale-95 opacity-0 transition-all duration-300 border border-white/20" id="videoModalCard">
+        <!-- Close Button -->
+        <button id="closeVideoModalBtn" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all duration-300 z-20 cursor-pointer">
+          <i class="las la-times text-xl"></i>
+        </button>
+
+        <div class="aspect-video w-full">
+          <video id="corporateVideoPlayer" controls class="w-full h-full object-contain bg-black">
+            <source src="/Boni kimya videosu tanırım.mp4" type="video/mp4" />
+            Tarayıcınız video oynatmayı desteklemiyor.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main JavaScript Entrypoint -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

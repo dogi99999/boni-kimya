@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim - Boni Kimya</title>
+    <meta name="description" content="Boni Kimya Sağlık Ürünleri A.Ş. iletişim bilgileri, telefon, faks, e-posta adresleri, harita lokasyonu ve hızlı iletişim formu." />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Leaflet Map Assets -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  </head>
+  <body class="bg-krem text-siyah select-none">
+
+    <!-- Header Section (Double Row Navigation) -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="mainHeader">
+      
+      <!-- White Top Utility Navbar -->
+      <div class="bg-white border-b border-gray-100 text-gray-700 py-2 transition-all duration-300 relative w-full text-[11px] font-medium" id="headerTopRow">
+        <div class="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center w-full">
+          
+          <!-- Top Left: Phone, Email, WhatsApp Support & E-Katalog -->
+          <div class="flex items-center space-x-4 sm:space-x-5">
+            <a href="tel:+902128863100" class="flex items-center text-gray-700 hover:text-pembe transition-colors">
+              <i class="las la-phone text-xs mr-1.5 text-pembe"></i>
+              <span>+90 212 886 31 00</span>
+            </a>
+            <a href="mailto:info@bonikimya.com" class="hidden sm:flex items-center text-gray-700 hover:text-pembe transition-colors">
+              <i class="las la-envelope text-xs mr-1.5 text-pembe"></i>
+              <span>info@bonikimya.com</span>
+            </a>
+            <span class="hidden sm:inline-block text-gray-300 text-[10px]">|</span>
+            <a href="https://api.whatsapp.com/send?phone=+902128863100" target="_blank" class="flex items-center text-gray-700 hover:text-[#25d366] transition-colors font-semibold">
+              <i class="lab la-whatsapp text-sm mr-1 text-[#25d366]"></i>
+              <span>WhatsApp Destek</span>
+            </a>
+            <span class="hidden sm:inline-block text-gray-300 text-[10px]">|</span>
+            <a href="https://www.bonikimya.com/" target="_blank" class="flex items-center text-gray-700 hover:text-pembe transition-colors font-semibold">
+              <i class="las la-book-open text-sm mr-1 text-pembe"></i>
+              <span>E-Katalog</span>
+            </a>
+          </div>
+
+          <!-- Top Right: Corporate Brands List (BONI BABY, BABY NICE, POMIKS, BON, BRAVO) -->
+          <div class="hidden md:flex items-center space-x-3 text-[10px] font-bold uppercase tracking-wider">
+            <span class="text-gray-400 font-semibold lowercase">markalarımız:</span>
+            <a href="/urunlerimiz.html?brand=Boni%20Baby" class="text-gray-800 hover:text-pembe transition-colors">BONİ BABY</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Baby%20Nice" class="text-gray-800 hover:text-pembe transition-colors">BABY NİCE</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Pomiks" class="text-gray-800 hover:text-pembe transition-colors">POMİKS</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Bon" class="text-gray-800 hover:text-pembe transition-colors">BON</a>
+            <span class="text-gray-300">•</span>
+            <a href="/urunlerimiz.html?brand=Bravo" class="text-gray-800 hover:text-pembe transition-colors">BRAVO</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Unified Single Header Row -->
+      <div class="h-[72px] flex items-center transition-all duration-300 relative w-full" id="headerNavRow">
+        <div class="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center space-x-6 w-full">
+          
+          <!-- Left: Logo -->
+          <div class="flex items-center shrink-0">
+            <a href="/index.html" class="flex items-center">
+              <img src="/logo.png" alt="Boni Kimya Logo" class="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 hover:scale-105" id="headerLogo" />
+            </a>
+          </div>
+
+          <!-- Center: Navigation Links (Spacious 12px Font & Generous Spacing) -->
+          <nav class="hidden xl:flex items-center space-x-6 lg:space-x-7 xl:space-x-8 2xl:space-x-10 shrink-0">
+            <a href="/index.html" class="text-[12px] font-semibold capitalize transition-colors">Anasayfa</a>
+            
+            <!-- KURUMSAL Dropdown -->
+            <div class="group/nav-item py-1">
+              <button class="flex items-center text-[12px] font-semibold capitalize transition-colors cursor-pointer">
+                <span>Kurumsal</span>
+                <i class="las la-angle-down ml-1 text-[10px]"></i>
+              </button>
+              <div class="absolute left-0 right-0 w-full top-full mt-0 bg-white shadow-2xl border-t border-b border-gray-100 py-10 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-250 z-50">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid grid-cols-5 gap-6">
+                  
+                  <a href="/hakkimizda.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hakkimizda.png" alt="Hakkımızda" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">Hakkımızda</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Vizyonumuz, misyonumuz ve kurumsal yapımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/is-sagligi-guvenligi.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/is_sagligi.png" alt="İş Sağlığı Güvenliği" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">İş Sağlığı Güvenliği</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Çalışanlarımızın sağlığı ve güvenliği taahhüdümüz</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/ar-ge.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/arge.png" alt="Ar-Ge" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">Ar-Ge</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">İnovatif ürünler ve laboratuvar çalışmalarımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/kalite-politikamiz.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/kalite.png" alt="Kalite Politikamız" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">Kalite Politikamız</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Üretimde mükemmellik ve standart sertifikalarımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/ihracat.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 last:border-r-0 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/ihracat_dropdown.png" alt="İhracat" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">İhracat</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">POMİKS, BRAVO ve BABY NICE ile küresel ihracat ağımız</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Detaylı Bilgi</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- ÜRÜNLERİMİZ Dropdown -->
+            <div class="group/nav-item py-1">
+              <button class="flex items-center text-[12px] font-semibold capitalize transition-colors cursor-pointer">
+                <span>Ürünlerimiz</span>
+                <i class="las la-angle-down ml-1 text-[10px]"></i>
+              </button>
+              <div class="absolute left-0 right-0 w-full top-full mt-0 bg-white shadow-2xl border-t border-b border-gray-100 py-10 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-250 z-50">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid grid-cols-6 gap-6">
+                  
+                  <a href="/urunlerimiz.html?category=bebek-bezi" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/bebek_bezi.png" alt="Bebek Bezi" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-pembe transition-colors">Bebek Bezi</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Konforlu, emici ve cilt dostu bebek bezleri</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=yetiskin-bezi" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hasta_bezi.png" alt="Yetişkin Bezi" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-pembe transition-colors">Yetişkin Bezi</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Maksimum sızdırmazlık ve medikal koruma</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=hijyenik-ped" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hijyenik_ped.png" alt="Hijyenik Ped" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-pembe transition-colors">Hijyenik Ped</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Kadın hijyeninde yüksek koruma ve konfor</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=islak-mendil" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/islak_mendil.png" alt="Islak Mendil & Temizlik" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-pembe transition-colors">Islak Mendil & Temizlik</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Pratik, alkolsüz ve hijyenik mendil çözümleri</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=bebek-bakimi" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/bebek_bakimi.png" alt="Bebek Bakımı" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-pembe transition-colors">Bebek Bakımı</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Hassas ciltler için özel pudra ve havlular</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/urunlerimiz.html?category=pamuk-urunleri" class="group/prod-item flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 last:border-r-0 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/pamuk_urunleri.png" alt="Pamuk Ürünleri" class="w-full h-full object-cover transform scale-100 group-hover/prod-item:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-[#000000] tracking-wider group-hover/prod-item:text-pembe transition-colors">Pamuk Ürünleri</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">%100 saf pamuktan üretilmiş kişisel bakım ürünleri</span>
+                    <div class="text-[10px] font-bold text-black group-hover/prod-item:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Tüm Ürünler</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/prod-item:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- HİZMETLERİMİZ Dropdown -->
+            <div class="group/nav-item py-1">
+              <button class="flex items-center text-[12px] font-semibold capitalize transition-colors cursor-pointer">
+                <span>Hizmetlerimiz</span>
+                <i class="las la-angle-down ml-1 text-[10px]"></i>
+              </button>
+              <div class="absolute left-0 right-0 w-full top-full mt-0 bg-white shadow-2xl border-t border-b border-gray-100 py-10 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-250 z-50">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid grid-cols-3 gap-8">
+                  
+                  <a href="/makina-danismanligi.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/makina_danismanligi.png" alt="Makine Danışmanlığı" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">Makine Danışmanlığı</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Hijyenik ürün üretim makineleri kurulum ve optimizasyon danışmanlığı</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Bilgi Alın</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/hammadde-danismanligi.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 border-r border-gray-100 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/hammadde_danismanligi.png" alt="Hammadde Danışmanlığı" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">Hammadde Danışmanlığı</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Üretim süreci ve kaliteli girdi tedarik danışmanlığı</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Bilgi Alın</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                  <a href="/private-label.html" class="group/menu-card flex flex-col p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 last:border-r-0 pr-6">
+                    <div class="w-full h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center mb-4 border border-gray-100 shadow-sm">
+                      <img src="/categories/private_label.png" alt="Private Label" class="w-full h-full object-cover transform scale-100 group-hover/menu-card:scale-105 transition-transform duration-300" />
+                    </div>
+                    <span class="text-xs font-bold uppercase text-black tracking-wider group-hover/menu-card:text-pembe transition-colors">Private Label</span>
+                    <span class="text-[10px] text-gray-600 font-medium font-light mt-1.5 leading-relaxed">Kendi markanız altında fason hijyenik ürün üretimi</span>
+                    <div class="text-[10px] font-bold text-black group-hover/menu-card:text-pembe flex items-center mt-3 transition-colors">
+                      <span>Bilgi Alın</span>
+                      <i class="las la-arrow-right ml-1 transition-transform group-hover/menu-card:translate-x-1"></i>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <a href="/sertifikalarimiz.html" class="text-[12px] font-semibold capitalize transition-colors">Sertifikalarımız</a>
+            <a href="/haberler.html" class="text-[12px] font-semibold capitalize transition-colors">Blog</a>
+            <a href="/iletisim.html" class="text-[12px] font-semibold capitalize transition-colors">İletişim</a>
+          </nav>
+
+          <!-- Right: E-Katalog Button, WhatsApp Icon Button, Language Selector & Search Button -->
+          <div class="flex items-center space-x-3 sm:space-x-4 lg:space-x-5 shrink-0">
+            
+            <!-- E-Katalog Pill Button -->
+            <a href="https://www.bonikimya.com/" target="_blank" class="hidden md:flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl bg-pembe hover:bg-pembe/90 text-white text-xs font-semibold transition-all duration-300 border border-pembe/30 cursor-pointer shadow-xs">
+              <i class="las la-book-open text-sm text-white"></i>
+              <span>E-Katalog</span>
+            </a>
+
+            <!-- Sleek Compact WhatsApp Icon Button -->
+            <a href="https://api.whatsapp.com/send?phone=+902128863100" target="_blank" aria-label="WhatsApp Destek" class="w-9 h-9 rounded-full bg-pembe/20 text-[#25d366] hover:bg-pembe hover:text-white border border-pembe/30 flex items-center justify-center transition-all duration-300 cursor-pointer shrink-0 shadow-xs" id="headerWhatsappLink">
+              <i class="lab la-whatsapp text-lg"></i>
+            </a>
+
+            <!-- Subtle Vertical Divider -->
+            <span class="text-white/20 text-xs hidden sm:inline-block">|</span>
+
+            <!-- Language Selector -->
+            <div class="relative group/lang py-1">
+              <button class="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold text-white transition-all duration-300 border border-white/15 cursor-pointer focus:outline-none" id="headerLangBtn">
+                <i class="las la-globe text-sm text-pembe"></i>
+                <span>TR</span>
+                <i class="las la-angle-down text-[9px] opacity-70"></i>
+              </button>
+              
+              <div class="absolute right-0 top-full mt-2 w-28 bg-white rounded-xl shadow-lg border border-gray-100 py-1.5 opacity-0 invisible group-hover/lang:opacity-100 group-hover/lang:visible transition-all duration-200 z-50">
+                <a href="#" data-lang="tr" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-pembe">
+                  <img src="https://flagcdn.com/w20/tr.png" alt="TR Flag" class="w-4 mr-1.5 object-cover" /> TR
+                </a>
+                <a href="#" data-lang="en" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-pembe">
+                  <img src="https://flagcdn.com/w20/gb.png" alt="EN Flag" class="w-4 mr-1.5 object-cover" /> EN
+                </a>
+                <a href="#" data-lang="fr" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-pembe">
+                  <img src="https://flagcdn.com/w20/fr.png" alt="FR Flag" class="w-4 mr-1.5 object-cover" /> FR
+                </a>
+                <a href="#" data-lang="es" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-pembe">
+                  <img src="https://flagcdn.com/w20/es.png" alt="ES Flag" class="w-4 mr-1.5 object-cover" /> ES
+                </a>
+                <a href="#" data-lang="ru" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-pembe">
+                  <img src="https://flagcdn.com/w20/ru.png" alt="RU Flag" class="w-4 mr-1.5 object-cover" /> RU
+                </a>
+                <a href="#" data-lang="ar" class="flex items-center px-4 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-pembe">
+                  <img src="https://flagcdn.com/w20/sa.png" alt="AR Flag" class="w-4 mr-1.5 object-cover" /> AR
+                </a>
+              </div>
+            </div>
+
+            <!-- Subtle Vertical Divider -->
+            <span class="text-white/20 text-xs hidden sm:inline-block">|</span>
+
+            <!-- Search Button -->
+            <button id="openHeaderSearchBtn" aria-label="Arama Yapın" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 flex items-center justify-center text-white transition-all duration-300 cursor-pointer shrink-0">
+              <i class="las la-search text-base"></i>
+            </button>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mobileMenuBtn" aria-label="Menüyü Aç" class="xl:hidden w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 flex items-center justify-center text-white transition-colors cursor-pointer shrink-0">
+              <i class="las la-bars text-xl"></i>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Slide-over Menu Panel -->
+    <div id="mobileMenuPanel" class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-350 ease-in-out flex flex-col">
+      <div class="p-6 border-b border-gray-100 flex items-center justify-between">
+        <img src="/logo.png" alt="Boni Kimya" class="h-10 w-auto object-contain" />
+        <button id="closeMobileMenuBtn" class="p-2 text-gray-600 font-medium hover:text-siyah transition-colors cursor-pointer">
+          <i class="las la-times text-xl"></i>
+        </button>
+      </div>
+
+      <div class="flex-1 overflow-y-auto p-6 space-y-6">
+        <nav class="space-y-4">
+          <a href="/index.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">ANASAYFA</a>
+          
+          <!-- Kurumsal Accordion -->
+          <div class="space-y-2">
+            <button id="mobileBrandsToggle" class="w-full flex items-center justify-between text-sm font-bold text-[#000000] hover:text-pembe transition-colors py-1 cursor-pointer">
+              <span>KURUMSAL</span>
+              <i class="las la-angle-down text-xs transition-transform" id="mobileBrandsArrow"></i>
+            </button>
+            <div id="mobileBrandsSubmenu" class="hidden pl-4 space-y-2.5 border-l border-gray-100">
+              <a href="/hakkimizda.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Hakkımızda</a>
+              <a href="/is-sagligi-guvenligi.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">İş Sağlığı Güvenliği</a>
+              <a href="/ar-ge.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Ar-Ge</a>
+              <a href="/kalite-politikamiz.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Kalite Politikamız</a>
+              <a href="/ihracat.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">İhracat</a>
+            </div>
+          </div>
+
+          <!-- Ürünlerimiz Accordion -->
+          <div class="space-y-2">
+            <button id="mobileServicesToggle" class="w-full flex items-center justify-between text-sm font-bold text-[#000000] hover:text-pembe transition-colors py-1 cursor-pointer">
+              <span>ÜRÜNLERİMİZ</span>
+              <i class="las la-angle-down text-xs transition-transform" id="mobileServicesArrow"></i>
+            </button>
+            <div id="mobileServicesSubmenu" class="hidden pl-4 space-y-2.5 border-l border-gray-100">
+              <a href="/urunlerimiz.html?category=bebek-bezi" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Bebek Bezi</a>
+              <a href="/urunlerimiz.html?category=yetiskin-bezi" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Yetişkin Bezi</a>
+              <a href="/urunlerimiz.html?category=hijyenik-ped" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Hijyenik Ped</a>
+              <a href="/urunlerimiz.html?category=islak-mendil" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Islak Mendil</a>
+              <a href="/urunlerimiz.html?category=pamuk-urunleri" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Pamuk Ürünleri</a>
+              <a href="/urunlerimiz.html?category=bebek-bakimi" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Bebek Bakımı</a>
+            </div>
+          </div>
+
+          <!-- Hizmetlerimiz Accordion -->
+          <div class="space-y-2">
+            <button id="mobileServicesMenuToggle" class="w-full flex items-center justify-between text-sm font-bold text-[#000000] hover:text-pembe transition-colors py-1 cursor-pointer">
+              <span>HİZMETLERİMİZ</span>
+              <i class="las la-angle-down text-xs transition-transform" id="mobileServicesMenuArrow"></i>
+            </button>
+            <div id="mobileServicesMenuSub" class="hidden pl-4 space-y-2.5 border-l border-gray-100">
+              <a href="/makina-danismanligi.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Makine Danışmanlığı</a>
+              <a href="/hammadde-danismanligi.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Hammadde Danışmanlığı</a>
+              <a href="/private-label.html" class="block text-xs text-gray-600 hover:text-pembe transition-colors">Private Label</a>
+            </div>
+          </div>
+
+          <a href="/sertifikalarimiz.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">SERTİFİKALARIMIZ</a>
+          <a href="/haberler.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">HABERLER</a>
+          <a href="/iletisim.html" class="block text-sm font-bold text-[#000000] hover:text-pembe transition-colors">İLETİŞİM</a>
+        </nav>
+      </div>
+
+      <div class="p-6 border-t border-gray-100 bg-gray-50">
+        <a href="https://api.whatsapp.com/send?phone=+902128863100" target="_blank" class="flex items-center justify-center space-x-2 py-3 bg-[#25d366] hover:bg-[#20ba5a] text-white font-bold rounded-xl shadow-md transition-colors text-xs">
+          <i class="lab la-whatsapp text-lg"></i>
+          <span>WhatsApp Destek</span>
+        </a>
+      </div>
+    </div>
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
+      
+      
+    <!-- Main Content Wrapper -->
+    
+    <!-- Main Content Wrapper -->
+    <main class="pt-28 lg:pt-36 bg-gray-50/50">
+      
+      <!-- Page Hero Section -->
+      <section class="relative subpage-hero py-20 text-white overflow-hidden select-none" style="background-color: #064e3b;">
+        <!-- High Quality Background Photo Layer -->
+        <div class="subpage-hero-bg absolute inset-0 bg-cover bg-center" style="background-image: url('/categories/boni_kimya_fabrika.png');"></div>
+        <!-- Dark Emerald Gradient Overlay for 100% High Contrast Text Readability -->
+        <div class="subpage-hero-overlay absolute inset-0"></div>
+        
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
+          <div class="flex flex-col space-y-3 max-w-2xl">
+            <nav class="flex items-center space-x-2 text-[11px] font-semibold uppercase tracking-wider text-gray-600 font-medium mb-1">
+              <a href="/index.html" class="hover:text-white transition-colors flex items-center"><i class="las la-home mr-1 text-xs"></i> Ana Sayfa</a>
+              <i class="las la-angle-right text-[9px] opacity-70"></i>
+              <span class="text-white font-bold">İletişim</span>
+            </nav>
+            <h1 class="text-3xl lg:text-4xl font-extrabold tracking-tight text-white drop-shadow-md">İletişim</h1>
+            <p class="text-xs lg:text-sm text-white/95 max-w-xl font-medium leading-relaxed drop-shadow-sm">Sorularınız, iş ortaklıkları ve B2B teklif talepleriniz için bizimle iletişime geçebilirsiniz.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: Contact Form & Image (White Background) -->
+      <section class="py-20 bg-white select-none">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            
+            <!-- Left Side: Form -->
+            <div class="lg:col-span-7 space-y-8">
+              <div class="space-y-4">
+                <span class="text-xs font-black uppercase tracking-widest text-[#000000]">Bizimle İletişime Geçin</span>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-[#000000] tracking-tight leading-tight">Hızlı İletişim Formu</h2>
+                <div class="w-16 h-1 bg-[#000000] rounded-full"></div>
+              </div>
+
+              <form id="pageContactForm" class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <!-- Name Field -->
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Adınız Soyadınız *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-user"></i></span>
+                      <input type="text" name="name" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3.5 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Ad Soyad" />
+                    </div>
+                  </div>
+                  <!-- Email Field -->
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">E-Posta Adresiniz *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-envelope"></i></span>
+                      <input type="email" name="email" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3.5 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="ornek@eposta.com" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <!-- Telephone Field -->
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Telefon Numaranız *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-phone"></i></span>
+                      <input type="tel" name="phone" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3.5 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="0555 555 5555" />
+                    </div>
+                  </div>
+                  <!-- City/District Field -->
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Şehir / Semt *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-map-marker"></i></span>
+                      <input type="text" name="location" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3.5 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="İstanbul / Esenyurt" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Subject Field -->
+                <div>
+                  <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Konu *</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-info-circle"></i></span>
+                    <input type="text" name="subject" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3.5 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Mesaj Konusu" />
+                  </div>
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                  <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Mesajınız *</label>
+                  <textarea name="message" required rows="5" class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all resize-none" placeholder="Lütfen mesajınızı detaylı olarak buraya yazınız..."></textarea>
+                </div>
+
+                <!-- Submit Area -->
+                <div class="flex items-center justify-between pt-2">
+                  <p class="text-[10px] text-gray-600 font-medium font-light max-w-[60%]">* Doldurulması zorunlu alanlar. Bilgileriniz KVKK kapsamında güvenle işlenir.</p>
+                  <button type="submit" class="px-8 py-3.5 bg-[#000000] hover:bg-[#000000] text-white font-bold rounded-2xl transition-colors duration-300 shadow-lg cursor-pointer text-xs uppercase tracking-wider flex items-center">
+                    <span>Gönder</span>
+                    <i class="las la-paper-plane ml-2 text-sm" id="pageSubmitIcon"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Right Side: Visual Image -->
+            <div class="lg:col-span-5">
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white shadow-gray-200/50 group transition-all duration-300">
+                <img src="/iletişim.png" alt="Boni Kimya İletişim Bilgileri" class="w-full h-auto object-cover transform scale-100 group-hover:scale-101 transition-transform duration-500 rounded-2xl" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 2: Contact Info Cards (Gray Background) -->
+      <section class="py-24 bg-gray-50/50 border-t border-b border-gray-100 select-none">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Card 1: Address -->
+            <div class="bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-[#000000]/5 text-[#000000] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#000000] group-hover:text-white transition-all duration-300">
+                  <i class="las la-map-marked-alt"></i>
+                </div>
+                <h3 class="text-sm font-black text-[#000000] uppercase tracking-wide">Merkez & Fabrika</h3>
+                <p class="text-xs text-gray-600 font-medium font-light leading-relaxed">
+                  Akşemseddin, 211. Sk. No:2 Esenyurt, Istanbul, Turkey 34510
+                </p>
+              </div>
+              <div class="mt-8 pt-4 border-t border-gray-50">
+                <a href="https://maps.google.com/?q=41.016525,28.692397" target="_blank" class="text-[10px] font-bold text-white hover:text-gray-600 font-medium flex items-center transition-colors">
+                  <span>Yol Tarifi Al</span>
+                  <i class="las la-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2: Phone & Fax -->
+            <div class="bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-[#000000]/5 text-[#000000] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#000000] group-hover:text-white transition-all duration-300">
+                  <i class="las la-phone-volume"></i>
+                </div>
+                <h3 class="text-sm font-black text-[#000000] uppercase tracking-wide">Telefon & Belgegeçer</h3>
+                <div class="text-xs text-gray-600 font-medium font-light space-y-1">
+                  <p class="flex items-center"><span class="font-bold text-[#000000] mr-2">T:</span> +90 (212) 886 31 00</p>
+                  <p class="flex items-center"><span class="font-bold text-[#000000] mr-2">F:</span> +90 (212) 886 31 03</p>
+                </div>
+              </div>
+              <div class="mt-8 pt-4 border-t border-gray-50">
+                <a href="tel:+902128863100" class="text-[10px] font-bold text-white hover:text-gray-600 font-medium flex items-center transition-colors">
+                  <span>Hemen Arayın</span>
+                  <i class="las la-phone ml-1 transition-transform group-hover:translate-x-1"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Email & Socials -->
+            <div class="bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-[#000000]/5 text-[#000000] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#000000] group-hover:text-white transition-all duration-300">
+                  <i class="las la-envelope-open"></i>
+                </div>
+                <h3 class="text-sm font-black text-[#000000] uppercase tracking-wide">E-Posta &amp; Kep</h3>
+                <div class="text-xs text-gray-600 font-medium font-light space-y-1">
+                  <p class="flex items-center"><span class="font-bold text-[#000000] mr-2">E:</span> info@bonikimya.com</p>
+                  <p class="flex items-center"><span class="font-bold text-[#000000] mr-2">K:</span> bonikimya@hs02kep.tr</p>
+                </div>
+              </div>
+              <div class="mt-8 pt-4 border-t border-gray-50">
+                <a href="mailto:info@bonikimya.com" class="text-[10px] font-bold text-white hover:text-gray-600 font-medium flex items-center transition-colors">
+                  <span>E-Posta Gönder</span>
+                  <i class="las la-paper-plane ml-1 transition-transform group-hover:translate-x-1"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 3: Full Width Interactive Map (White Background) -->
+      <section class="py-20 bg-white select-none">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+          
+          <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
+            <span class="text-xs font-black uppercase tracking-widest text-[#000000]">Lokasyonumuz</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-[#000000] tracking-tight">İnteraktif Ulaşım Haritası</h2>
+            <div class="w-16 h-1 bg-black mx-auto rounded-full mt-4"></div>
+          </div>
+
+          <!-- Map Container -->
+          <div class="w-full h-[450px] rounded-3xl overflow-hidden shadow-xl border border-gray-100 relative z-10" id="iletisimMap"></div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Leaflet JS Dependency -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Inline Map Initialization & Page Form Handling Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // 1. Initialize Leaflet Map
+        const mapEl = document.getElementById('iletisimMap');
+        if (mapEl) {
+          // Factory Coordinates
+          const lat = 41.016525;
+          const lng = 28.692397;
+          
+          const map = L.map('iletisimMap', {
+            zoomControl: true,
+            scrollWheelZoom: false
+          }).setView([lat, lng], 15);
+
+          // Add OSM tile layer
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+          }).addTo(map);
+
+          // Custom popup HTML matching Boni Kimya brand
+          const popupHtml = `
+            <div style="font-family: 'Outfit', sans-serif; padding: 4px; color: #000000;">
+              <h5 style="margin: 0 0 6px 0; font-weight: 800; font-size: 13px; text-transform: uppercase; color: #000000;">Boni Kimya A.Ş.</h5>
+              <p style="margin: 0 0 8px 0; font-size: 11px; line-height: 1.4; color: #64748b;">
+                Akşemseddin, 211. Sk. No:2 Esenyurt, Istanbul, Turkey 34510
+              </p>
+              <a href="https://maps.google.com/?q=${lat},${lng}" target="_blank" style="display: inline-block; background-color: #000000; color: white; padding: 6px 12px; font-weight: 700; font-size: 9px; text-transform: uppercase; border-radius: 6px; text-decoration: none; transition: background-color 0.2s;">
+                Yol Tarifi Al
+              </a>
+            </div>
+          `;
+
+          // Add Marker
+          const marker = L.marker([lat, lng]).addTo(map);
+          marker.bindPopup(popupHtml).openPopup();
+        }
+
+        // 2. Page Contact Form Handler
+        const pageContactForm = document.getElementById('pageContactForm');
+        if (pageContactForm) {
+          pageContactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const submitBtn = pageContactForm.querySelector('button[type="submit"]');
+            const submitBtnText = submitBtn.querySelector('span');
+            const submitIcon = document.getElementById('pageSubmitIcon');
+            
+            const originalText = submitBtnText.textContent;
+            submitBtnText.textContent = 'Gönderiliyor...';
+            submitIcon.className = 'las la-spinner animate-spin ml-2 text-sm';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+              submitBtnText.textContent = originalText;
+              submitIcon.className = 'las la-paper-plane ml-2 text-sm';
+              submitBtn.disabled = false;
+
+              pageContactForm.reset();
+              showPageSuccessToast('Mesajınız başarıyla iletildi! En kısa sürede dönüş sağlanacaktır.');
+            }, 1500);
+          });
+        }
+
+        function showPageSuccessToast(message) {
+          const toast = document.createElement('div');
+          toast.className = 'fixed bottom-24 right-6 bg-emerald-500 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center space-x-3 z-50 animate__animated animate__fadeInUp border border-emerald-400/30';
+          toast.style.backdropFilter = 'blur(8px)';
+          
+          toast.innerHTML = `
+            <div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
+              <i class="las la-check text-white text-base"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider">${message}</span>
+          `;
+
+          document.body.appendChild(toast);
+
+          setTimeout(() => {
+            toast.classList.add('animate__fadeOutDown');
+            setTimeout(() => toast.remove(), 500);
+          }, 3000);
+        }
+      });
+    </script>
+
+
+    <!-- Custom inline JS script for lightbox handling -->
+    <script>
+      function openLightbox(src, title) {
+        const lightbox = document.getElementById('certLightbox');
+        const img = document.getElementById('lightboxImage');
+        const titleEl = document.getElementById('lightboxTitle');
+        
+        img.src = src;
+        titleEl.textContent = title;
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById('certLightbox');
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    </script>
+    <!-- SVG Cloud/Wave Divider for Playful Theme -->
+    <div class="relative w-full overflow-hidden leading-[0] bg-transparent -mb-1 mt-12">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[60px]">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,88.43,26.85,150.31,43.74,220.67,65.05,321.39,56.44Z" class="fill-[#000000]"></path>
+      </svg>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#000000] text-white pt-12 pb-16 relative">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+        
+        <!-- Row 1: Fun & Trust Badges -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-neutral-800 text-center lg:text-left">
+          
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-white transition-all duration-300 shadow-md">
+              <i class="las la-baby text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-white">Ultra Yumuşak & Kuru</h5>
+              <p class="text-xs text-gray-300 font-normal mt-1">Bebek cildi için ekstra pamuksu doku ve sızdırmaz bariyerler.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-white transition-all duration-300 shadow-md">
+              <i class="las la-briefcase-medical text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-white">Medikal Standartlar</h5>
+              <p class="text-xs text-gray-300 font-normal mt-1">Yetişkin bezlerinde yüksek emicilik ve ISO 13485 medikal onay.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-white transition-all duration-300 shadow-md">
+              <i class="las la-shield-alt text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-white">Dermatolojik Onay</h5>
+              <p class="text-xs text-gray-300 font-normal mt-1">Hassas cilt tipleri için test edilmiş, hipoalerjenik ve nefes alan yapı.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-4 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-[#000000] group-hover:bg-[#000000] group-hover:text-white transition-all duration-300 shadow-md">
+              <i class="las la-leaf text-3xl"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-extrabold uppercase tracking-wider text-white">Doğa Dostu Üretim</h5>
+              <p class="text-xs text-gray-300 font-normal mt-1">%100 geri dönüştürülebilir ambalajlar ve sürdürülebilir vizyon.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: Detailed Links Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-16">
+          
+          <!-- Column 1: Brand Intro -->
+          <div class="lg:col-span-2 space-y-6">
+            <img src="/logo.png" alt="Boni Kimya Logo" class="h-20 w-auto object-contain brightness-0 invert" />
+            <p class="text-gray-600 font-medium text-sm leading-relaxed max-w-sm font-light">
+              Boni Kimya Sağlık Ürünleri A.Ş., bebek bakımından yetişkin hasta bezine kadar geniş bir yelpazede yüksek standartlı, dermatolojik onaylı hijyen çözümleri üretmektedir.
+            </p>
+            
+            <!-- Newsletter Subscription Form -->
+            <div class="space-y-3 max-w-sm">
+              <h6 class="text-xs font-extrabold uppercase tracking-widest text-white">E-Bülten Üyeliği</h6>
+              <form class="flex items-center bg-white/5 border border-white/10 rounded-2xl p-1 focus-within:border-pembe transition-colors">
+                <input type="email" placeholder="E-Posta adresiniz" required class="w-full bg-transparent px-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none" />
+                <button type="submit" class="bg-pembe hover:bg-white hover:text-siyah text-white rounded-xl w-8 h-8 flex items-center justify-center transition-colors cursor-pointer"><i class="las la-paper-plane text-sm"></i></button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Column 2: Bebek Bakım Ürünleri -->
+          <div>
+            <h4 class="text-xs font-extrabold uppercase tracking-widest text-white mb-6">Bebek Bakım</h4>
+            <ul class="space-y-3 font-light text-sm text-gray-600 font-medium">
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Bebek Bezleri</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Külot Bezler</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Islak Bebek Mendili</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Bebek Şampuanı</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Beden Seçim Rehberi</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Yetişkin & Hasta Bakım -->
+          <div>
+            <h4 class="text-xs font-extrabold uppercase tracking-widest text-white mb-6">Yetişkin & Hasta</h4>
+            <ul class="space-y-3 font-light text-sm text-gray-600 font-medium">
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Yetişkin Hasta Bezi</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Emici Külot Bezler</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Yatak Koruyucu Örtü</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Mesane Pedleri</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Kullanım & Seçim Rehberi</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Kurumsal & Destek -->
+          <div>
+            <h4 class="text-xs font-extrabold uppercase tracking-widest text-white mb-6">Kurumsal & Bilgi</h4>
+            <ul class="space-y-3 font-light text-sm text-gray-600 font-medium">
+              <li><a href="/hakkimizda.html" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Hakkımızda</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Kalite Belgelerimiz</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Sürdürülebilirlik</a></li>
+              <li><a href="#" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">Kariyer (İK)</a></li>
+              <li><a href="/kvkk.html" class="flex items-center hover:text-white hover:translate-x-1.5 transition-all duration-300">KVKK ve Çerezler</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Row 3: Contact Details & Social Icons -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 border-t border-neutral-800 items-center">
+          
+          <!-- Contact Numbers -->
+          <div class="lg:col-span-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-xs text-gray-300 font-normal">
+            <span class="flex items-center"><i class="las la-phone text-lg text-pembe mr-2"></i> +90 212 886 31 00</span>
+            <span class="flex items-center"><i class="las la-envelope text-lg text-pembe mr-2"></i> info@bonikimya.com</span>
+            <span class="flex items-center"><i class="las la-map-marker text-lg text-pembe mr-2"></i> Akşemseddin, 211. Sk. No:2 Esenyurt, Istanbul, Turkey 34510</span>
+          </div>
+
+          <!-- Social links -->
+          <div class="lg:col-span-4 flex justify-center lg:justify-end space-x-4">
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-medium hover:bg-black hover:text-white hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-facebook-f text-base"></i>
+            </a>
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-medium hover:bg-black hover:text-white hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-twitter text-base"></i>
+            </a>
+            <a href="https://www.instagram.com/bonikimya/" target="_blank" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-medium hover:bg-black hover:text-white hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-instagram text-base"></i>
+            </a>
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-medium hover:bg-black hover:text-white hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-youtube text-base"></i>
+            </a>
+            <a href="#" class="w-9 h-9 bg-white/5 rounded-full flex items-center justify-center text-gray-600 font-medium hover:bg-black hover:text-white hover:rotate-12 hover:scale-110 transition-all duration-300">
+              <i class="lab la-linkedin-in text-base"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Copyright Area -->
+        <div class="mt-8 pt-6 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-300 font-normal">
+          <div class="flex items-center space-x-2.5">
+            <span class="inline-flex items-center space-x-1 bg-white/5 border border-white/10 rounded-full px-2.5 py-1 text-[9px] font-black uppercase text-white tracking-wider">
+              <i class="las la-check-circle text-[10px]"></i>
+              <span>Tescilli Küresel Üretici</span>
+            </span>
+            <p>Boni Kimya Sağlık Ürünleri A.Ş. © 2026 Tüm Hakları Saklıdır.</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="#" class="hover:text-white transition-colors">Kullanım Koşulları</a>
+            <span>•</span>
+            <a href="#" class="hover:text-white transition-colors">Gizlilik Politikası</a>
+            <span>•</span>
+            <a href="#" class="hover:text-white transition-colors">Çerez Ayarları</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Widget -->
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="fixed bottom-6 left-6 max-w-sm w-full bg-siyah text-white rounded-3xl p-6 shadow-2xl z-50 border border-neutral-800 animate__animated animate__fadeInLeft">
+      <h5 class="text-sm font-bold mb-2">Çerez Politikası</h5>
+      <p class="text-xs text-gray-600 font-medium leading-relaxed mb-4">
+        Boni Kimya olarak internet sitemizde çerez kullanmaktayız. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş sayılırsınız.
+      </p>
+      <div class="flex items-center space-x-3">
+        <button id="acceptCookiesBtn" class="px-5 py-2 bg-white text-siyah text-xs font-bold rounded-xl hover:bg-pembe hover:text-white transition-colors cursor-pointer">Kabul Et</button>
+        <a href="#" class="text-xs text-gray-600 font-medium hover:text-white transition-colors underline">Bilgi Al</a>
+      </div>
+    </div>
+
+    <!-- Dual-Structure Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <!-- Backdrop -->
+      <div class="fixed inset-0 bg-black/60 backdrop-blur-md transition-opacity duration-300 opacity-0" id="contactModalOverlay"></div>
+      
+      <!-- Modal Container -->
+      <div class="flex min-h-full items-center justify-center p-4 text-center">
+        <div class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-2xl transition-all duration-300 sm:my-8 sm:w-full sm:max-w-xl scale-95 opacity-0 border border-gray-100" id="contactModalCard">
+          
+          <!-- Close Button -->
+          <button id="closeContactModalBtn" class="absolute right-6 top-6 text-gray-600 font-medium hover:text-gray-600 transition-colors p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+            <i class="las la-times text-xl"></i>
+          </button>
+
+          <div class="bg-[#000000] p-8 text-white">
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Bizimle İletişime Geçin</span>
+            <h3 class="text-white font-extrabold">Hızlı Teklif &amp; Bilgi Formu</h3>
+            <p class="text-white/70 text-xs mt-1.5 font-light">Formu doldurarak ekibimizin size en kısa sürede dönüş yapmasını sağlayabilirsiniz.</p>
+          </div>
+
+          <!-- Form Tabs -->
+          <div class="px-8 pt-6">
+            <div class="flex bg-gray-50 p-1 rounded-2xl relative border border-gray-100">
+              <!-- Animated Slider Background -->
+              <div class="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] bg-white shadow-md rounded-xl transition-transform duration-300" id="tabSlider"></div>
+              
+              <button id="tabBireysel" class="relative z-10 w-1/2 py-3 text-xs font-bold uppercase tracking-wider text-siyah transition-colors duration-300 cursor-pointer">Bireysel İletişim</button>
+              <button id="tabKurumsal" class="relative z-10 w-1/2 py-3 text-xs font-bold uppercase tracking-wider text-gray-600 font-medium transition-colors duration-300 cursor-pointer">Kurumsal İletişim</button>
+            </div>
+          </div>
+
+          <!-- Forms Wrapper -->
+          <div class="p-8">
+            <form id="dualContactForm">
+              <!-- Shared Hidden Input -->
+              <input type="hidden" name="form_type" id="formTypeInput" value="bireysel" />
+
+              <div class="space-y-4">
+                
+                <!-- FIELD: Name / Contact Person -->
+                <div>
+                  <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2" id="labelName">Adınız Soyadınız *</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-user"></i></span>
+                    <input type="text" name="name" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Ad Soyad" />
+                  </div>
+                </div>
+
+                <!-- FIELD: Company Name (Corporate Only) -->
+                <div id="fieldCompany" class="hidden transition-all duration-300">
+                  <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Firma Ünvanı *</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-building"></i></span>
+                    <input type="text" name="company" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Firma Adı" />
+                  </div>
+                </div>
+
+                <!-- FIELDS Group: Email & Phone -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">E-Posta *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-envelope"></i></span>
+                      <input type="email" name="email" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="ornek@eposta.com" />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Telefon *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-phone"></i></span>
+                      <input type="tel" name="phone" required class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="0555 555 5555" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FIELDS Group: Sector & Tax Info (Corporate Only) -->
+                <div id="fieldCorporateGroup" class="hidden grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-300">
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Sektör *</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-tag"></i></span>
+                      <input type="text" name="sector" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Gıda, Sağlık, Perakende vb." />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Vergi Dairesi &amp; No</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-file-invoice"></i></span>
+                      <input type="text" name="tax_info" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Daire / Vergi No" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FIELD: Subject (Bireysel Only) -->
+                <div id="fieldSubject" class="transition-all duration-300">
+                  <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2">Konu *</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-600 font-medium"><i class="las la-info-circle"></i></span>
+                    <input type="text" name="subject" class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all" placeholder="Mesaj Konusu" />
+                  </div>
+                </div>
+
+                <!-- FIELD: Message -->
+                <div>
+                  <label class="block text-xs font-extrabold text-gray-600 font-medium uppercase tracking-wider mb-2" id="labelMessage">Mesajınız *</label>
+                  <textarea name="message" required rows="4" class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pembe focus:bg-white transition-all resize-none" placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
+                </div>
+
+              </div>
+
+              <!-- Submit Area -->
+              <div class="mt-6 flex items-center justify-between">
+                <p class="text-[10px] text-gray-600 font-medium font-light max-w-[60%]">* Doldurulması zorunlu alanlar. Bilgileriniz KVKK kapsamında korunmaktadır.</p>
+                <button type="submit" class="px-8 py-3.5 bg-[#000000] hover:bg-[#000000] text-white font-bold rounded-2xl transition-colors duration-300 shadow-lg cursor-pointer text-xs uppercase tracking-wider flex items-center">
+                  <span>Gönder</span>
+                  <i class="las la-paper-plane ml-2 text-sm" id="submitIcon"></i>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating B2B Action Widget -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 z-40 hidden md:block">
+      <button id="floatingB2BWidget" class="bg-[#000000] hover:bg-[#000000] text-white flex items-center space-x-2 py-3.5 px-4 rounded-r-2xl shadow-[0_10px_30px_rgba(26,35,90,0.3)] border-t border-r border-b border-white/10 hover:shadow-[0_10px_30px_rgba(234,0,5,0.4)] transition-all duration-300 transform translate-x-0 cursor-pointer group">
+        <i class="las la-industry text-lg animate-pulse"></i>
+        <span class="text-[10px] font-black uppercase tracking-wider max-w-0 overflow-hidden group-hover:max-w-[150px] transition-all duration-500 ease-in-out whitespace-nowrap">B2B Teklif &amp; Numune</span>
+      </button>
+    </div>
+
+    <!-- Main JavaScript Entrypoint -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
