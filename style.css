@@ -1,0 +1,1273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+@import "tailwindcss";
+
+
+@theme {
+  --color-anarenk: #00b594;
+  --color-kirmizi: #00b594;
+  --color-pembe: #00b594;
+  --color-gri: #9D9E9D;
+  --color-siyah: #1f1f1f;
+  --color-krem: #fcfcf9;
+  
+  --font-roboto: 'Roboto', sans-serif;
+  --font-montreal: 'Neue Montreal', 'Roboto', sans-serif;
+}
+
+@layer base {
+  :root {
+    --anarenk: #00b594;
+    --kirmizi: #00b594;
+    --pembe: #00b594;
+    --gri: #9D9E9D;
+    --siyah: #1f1f1f;
+    --krem: #fcfcf9;
+  }
+
+  body {
+    font-family: var(--font-montreal);
+    background-color: var(--krem);
+    color: var(--siyah);
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F6F5F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--anarenk);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--pembe);
+  }
+}
+
+/* Glassmorphism Navigation */
+.header-glass {
+  background: rgba(253, 253, 249, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Custom Mega Menu and Dropdowns */
+.menu-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom styles for Swiper pagination & navigation */
+.slider-button-prev,
+.slider-button-next {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.slider-button-prev:hover,
+.slider-button-next:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Brand carousel styling */
+.marka-buton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.marka-buton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.marka-buton img,
+.marka-buton svg {
+  max-height: 50px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* Pulse animation for WhatsApp widget */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+.whatsapp-pulse {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Double Row Header Transitions on scroll */
+#mainHeader {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Navigation Links Premium Underline Glowing Pill Effect */
+#headerNavRow nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#headerNavRow nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  border-radius: 9999px;
+  background-color: #00b594; /* Brand mint green */
+  box-shadow: 0 0 8px rgba(0, 181, 148, 0.6);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-50%);
+}
+
+#headerNavRow nav a:hover::after {
+  width: 16px; /* Elegant short glowing pill instead of full line */
+}
+
+#headerNavRow nav a:hover {
+  color: #00b594 !important;
+}
+
+/* Dropdown trigger chevron rotation micro-animation */
+#headerNavRow .group\/nav-item:hover button i.la-angle-down {
+  transform: rotate(180deg);
+  color: #00b594 !important;
+}
+
+#headerNavRow .group\/nav-item button i.la-angle-down {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease !important;
+}
+
+/* Smooth zoom-in hover effect on the Boni brand logo */
+#headerNavRow img.h-10 {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+#headerNavRow a:hover img.h-10 {
+  transform: scale(1.05);
+}
+
+/* Bize Ulaşın button pulsing animation in the top row */
+#openContactModalBtn {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  animation: btnPulse 3s infinite;
+}
+
+@keyframes btnPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/* --- New Century Mega-Menu Dropdown Panel Animations & Styling --- */
+#headerNavRow .group\/nav-item .absolute {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border-bottom: 1px solid rgba(0, 181, 148, 0.08) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06) !important;
+  transform: translateY(15px) scale(0.98);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s !important;
+  pointer-events: none;
+}
+
+#headerNavRow .group\/nav-item:hover .absolute {
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Mega menu items inside the dropdown */
+#headerNavRow .group\/nav-item .absolute a.group\/menu-card,
+#headerNavRow .group\/nav-item .absolute a.group\/prod-item {
+  border: 1px solid transparent !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+#headerNavRow .group\/nav-item .absolute a.group\/menu-card:hover,
+#headerNavRow .group\/nav-item .absolute a.group\/prod-item:hover {
+  background: linear-gradient(135deg, rgba(0, 181, 148, 0.04) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
+  border-color: rgba(0, 181, 148, 0.15) !important;
+  box-shadow: 0 10px 25px rgba(0, 181, 148, 0.05) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Make images inside cards float beautifully on hover */
+#headerNavRow .group\/nav-item .absolute a.group\/menu-card:hover img,
+#headerNavRow .group\/nav-item .absolute a.group\/prod-item:hover img {
+  transform: scale(1.06) translateY(-2px) !important;
+}
+
+#headerNavRow .group\/nav-item .absolute a.group\/menu-card img,
+#headerNavRow .group\/nav-item .absolute a.group\/prod-item img {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Dropdown menu section border separators */
+#headerNavRow .group\/nav-item .absolute .grid > a {
+  border-right: 1px solid rgba(229, 231, 235, 0.5) !important;
+}
+#headerNavRow .group\/nav-item .absolute .grid > a:last-child {
+  border-right: none !important;
+}
+
+/* Modal Open Animations */
+#contactModal.open #contactModalOverlay {
+  opacity: 1;
+}
+
+#contactModal.open #contactModalCard {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#newsModal.open {
+  opacity: 1;
+}
+
+#newsModal.open #newsModalOverlay {
+  opacity: 1;
+}
+
+#newsModal.open #newsModalCard {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* jsVectorMap Tooltip Custom Premium Styling */
+.jvm-tooltip {
+  background: #000000 !important;
+  color: #fff !important;
+  font-family: 'Neue Montreal', 'Roboto', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 8px 14px !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* jsVectorMap Image Markers Sizing & Hover Zoom Transitions */
+.jvm-container .jvm-markers-group image {
+  width: 20px !important;
+  height: 20px !important;
+  transform: translate(-10px, -10px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
+}
+
+.jvm-container .jvm-markers-group image:hover {
+  width: 26px !important;
+  height: 26px !important;
+  transform: translate(-13px, -13px);
+  filter: drop-shadow(0 6px 12px rgba(234, 0, 5, 0.35)); /* Brand red glow on hover */
+}
+
+/* Preloader Loading Animation */
+@keyframes loading {
+  0% { transform: scaleX(0); transform-origin: left; }
+  50% { transform: scaleX(0.5); transform-origin: left; }
+  50.1% { transform-origin: right; }
+  100% { transform: scaleX(0); transform-origin: right; }
+}
+
+/* Page Slide Transition Curtain */
+.preloader-curtain {
+  position: fixed;
+  inset: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.85s cubic-bezier(0.85, 0, 0.15, 1);
+  will-change: transform;
+}
+.preloader-curtain.slide-off {
+  transform: translateX(100%);
+}
+
+/* Scroll and Rendering Optimization for catalog items */
+.product-card-optimized {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 340px;
+}
+
+/* Dark Emerald #064e3b Header Top Bar */
+#headerTopRow {
+  background: #064e3b !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+#headerTopRow a, 
+#headerTopRow span,
+#headerTopRow button,
+#headerTopRow i {
+  color: #e6fcf7 !important;
+  transition: all 0.2s ease;
+}
+
+#headerTopRow a:hover,
+#headerTopRow button:hover {
+  color: #ffffff !important;
+}
+
+#headerTopRow .text-neutral-900\/20 {
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#headerTopRow #openContactModalBtn {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+#headerTopRow #openContactModalBtn:hover {
+  background-color: #ffffff !important;
+  color: #00b594 !important;
+}
+
+#headerTopRow #openContactModalBtn:hover * {
+  color: #00b594 !important;
+}
+
+#headerNavRow {
+  background: linear-gradient(to bottom, #f0fdf9 0%, #ffffff 100%) !important;
+  border-bottom: 1px solid rgba(0, 181, 148, 0.08) !important;
+}
+
+#headerNavRow nav a {
+  color: #1f2937 !important;
+  transition: all 0.2s ease;
+}
+
+#headerNavRow nav a:hover,
+#headerNavRow nav button:hover {
+  color: #00b594 !important;
+}
+
+#headerNavRow nav button {
+  color: #1f2937 !important;
+}
+
+/* Custom Mega Menu Background and border color matching the theme */
+#headerNavRow .group\/nav-item .absolute {
+  border-top: 3px solid #00b594 !important;
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Bridge the hover gap on mega menu dropdowns to prevent disappearing */
+#headerNavRow .group\/nav-item .absolute::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background: transparent;
+}
+
+/* Premium Mint Green to White Gradients for All Website Sections */
+body, 
+.bg-krem {
+  background: linear-gradient(135deg, #f3fdf8 0%, #ffffff 100%) !important;
+}
+
+/* Target standard light sections across all pages and apply the mint-to-white gradient */
+section:not(.bg-black):not(.bg-siyah):not([class*="from-black"]):not([class*="from-\[\#000000\]"]):not(#mainHeader):not([class*="bg-\[\#111638\]"]):not([class*="bg-\[\#000000\]"]) {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%) !important;
+}
+
+/* Alternate sections for a premium, dynamic feel */
+section:not(.bg-black):not(.bg-siyah):not([class*="from-black"]):not([class*="from-\[\#000000\]"]):not(#mainHeader):not([class*="bg-\[\#111638\]"]):not([class*="bg-\[\#000000\]"]):nth-of-type(even) {
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%) !important;
+}
+
+/* Make section background utility classes transparent so the gradient shines through */
+section:not(.bg-black):not(.bg-siyah):not([class*="from-black"]):not([class*="from-\[\#000000\]"]):not(#mainHeader):not([class*="bg-\[\#111638\]"]):not([class*="bg-\[\#000000\]"]).bg-white,
+section:not(.bg-black):not(.bg-siyah):not([class*="from-black"]):not([class*="from-\[\#000000\]"]):not(#mainHeader):not([class*="bg-\[\#111638\]"]):not([class*="bg-\[\#000000\]"]).bg-gray-50,
+section:not(.bg-black):not(.bg-siyah):not([class*="from-black"]):not([class*="from-\[\#000000\]"]):not(#mainHeader):not([class*="bg-\[\#111638\]"]):not([class*="bg-\[\#000000\]"]).bg-gray-50\/50,
+section:not(.bg-black):not(.bg-siyah):not([class*="from-black"]):not([class*="from-\[\#000000\]"]):not(#mainHeader):not([class*="bg-\[\#111638\]"]):not([class*="bg-\[\#000000\]"]).bg-gradient-to-b {
+  background: transparent !important;
+  border-color: rgba(0, 181, 148, 0.08) !important;
+}
+
+
+/* Premium Soft Light Gray to White Footer Redesign (Clean & Elegant) */
+footer {
+  background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%) !important;
+  color: #1f2937 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Style the SVG wave divider path to match the light gray footer and remove black */
+path.fill-\[\#000000\],
+path.fill-slate-950,
+.fill-\[\#000000\] {
+  fill: #f9fafb !important;
+}
+
+/* Ensure footer text is dark and highly readable */
+footer p, 
+footer span, 
+footer li, 
+footer a,
+footer h4, 
+footer h5, 
+footer h6 {
+  color: #374151 !important;
+}
+
+footer h4, footer h5, footer h6 {
+  color: #044e3a !important;
+}
+
+footer a:hover {
+  color: #00b594 !important;
+}
+
+/* Footer logo: show original colored logo */
+footer img[alt*="Logo"], 
+footer img[alt*="Boni Kimya"] {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Form elements in footer */
+footer form {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid rgba(0, 181, 148, 0.2) !important;
+}
+
+footer form input {
+  color: #1f2937 !important;
+}
+
+footer form input::placeholder {
+  color: #9ca3af !important;
+}
+
+footer form button {
+  background-color: #00b594 !important;
+  color: #ffffff !important;
+}
+
+footer form button:hover {
+  background-color: #059669 !important;
+}
+
+/* Footer social icons */
+footer a.w-9.h-9 {
+  background: rgba(0, 181, 148, 0.06) !important;
+  color: #00b594 !important;
+  border: 1px solid rgba(0, 181, 148, 0.15) !important;
+}
+
+footer a.w-9.h-9:hover {
+  background: #00b594 !important;
+  color: #ffffff !important;
+  transform: translateY(-3px) rotate(8deg) !important;
+}
+
+/* Footer border separators */
+footer .border-neutral-800,
+footer .border-t,
+footer .border-b {
+  border-color: rgba(0, 181, 148, 0.12) !important;
+}
+
+footer .bg-white\/5 {
+  background: rgba(0, 181, 148, 0.05) !important;
+  color: #00b594 !important;
+}
+
+/* Premium Glassmorphic Cookie Banner */
+#cookieBanner {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(0, 181, 148, 0.2) !important;
+  color: #1f2937 !important;
+}
+
+#cookieBanner h5 {
+  color: #00b594 !important;
+}
+
+#cookieBanner p {
+  color: #4b5563 !important;
+}
+
+#cookieBanner button {
+  background-color: #00b594 !important;
+  color: #ffffff !important;
+}
+
+#cookieBanner button:hover {
+  background-color: #059669 !important;
+}
+
+/* ==========================================================================
+   Global High-Contrast Typography & 100% Readability Enforcement
+   ========================================================================== */
+body {
+  color: #1f2937 !important; /* High contrast dark charcoal body text */
+}
+
+/* Default headings on light backgrounds */
+h1, h2, h3, h4, h5, h6 {
+  color: #111827;
+}
+
+/* Main Hero Video Title Contrast Enforcement (Fix Screenshot 2) */
+section.relative.w-full h2,
+section.relative.select-none.w-full h2,
+.main-hero-video-title {
+  color: #ffffff !important;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Enforce PURE WHITE text inside dark sections, dark cards, and video hero overlay */
+section.relative.w-full.h-\[calc\(100vh-80px\)\],
+section.relative.select-none.w-full,
+.subpage-hero,
+.bg-black,
+.bg-\[\#000000\],
+.bg-\[\#064e3b\],
+.bg-neutral-900,
+.bg-emerald-900,
+.text-white {
+  color: #ffffff !important;
+}
+
+section.relative.w-full.h-\[calc\(100vh-80px\)\] h1,
+section.relative.w-full.h-\[calc\(100vh-80px\)\] h2,
+section.relative.w-full.h-\[calc\(100vh-80px\)\] h3,
+section.relative.select-none.w-full h1,
+section.relative.select-none.w-full h2,
+section.relative.select-none.w-full h3,
+.subpage-hero h1,
+.subpage-hero h2,
+.subpage-hero h3 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Dark Vizyon / İSG Cards Modern Styling (Fix Screenshots 3 & 5) */
+.bg-black,
+.bg-\[\#000000\] {
+  background: linear-gradient(135deg, #064e3b 0%, #04392b 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 25px -5px rgba(6, 78, 59, 0.3) !important;
+}
+
+.bg-black h3, .bg-\[\#000000\] h3,
+.bg-black h4, .bg-\[\#000000\] h4,
+.bg-black span, .bg-\[\#000000\] span {
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+.bg-black p, .bg-\[\#000000\] p {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* Primary Dark Buttons (Fix Screenshot 1 - Distribütörlük Başvurusu Button) */
+button.bg-black, button.bg-\[\#000000\], button.bg-\[\#064e3b\], #aboutB2BBtn,
+a.bg-black, a.bg-\[\#000000\], a.bg-\[\#064e3b\] {
+  background-color: #064e3b !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+button.bg-black:hover, button.bg-\[\#000000\]:hover, button.bg-\[\#064e3b\]:hover, #aboutB2BBtn:hover,
+a.bg-black:hover, a.bg-\[\#000000\]:hover, a.bg-\[\#064e3b\]:hover {
+  background-color: #04392b !important;
+  color: #ffffff !important;
+}
+
+button.bg-black *, button.bg-\[\#000000\] *, button.bg-\[\#064e3b\] *, #aboutB2BBtn *,
+a.bg-black *, a.bg-\[\#000000\] *, a.bg-\[\#064e3b\] * {
+  color: #ffffff !important;
+}
+
+/* Footer Contrast & Readability Rules (Fix Screenshot 4) */
+footer {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+footer h5, footer h4, footer h3, footer h6 {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+footer p, footer span, footer li {
+  color: #d1d5db !important; /* High contrast light silver gray on black background */
+}
+
+footer a {
+  color: #e5e7eb !important;
+}
+
+footer a:hover {
+  color: #ffffff !important;
+}
+
+/* Stat Cards Sub-labels (Fix Screenshot 1 - "KÜRESEL İHRACAT", "DERMATOLOJİK ONAY", "ENTEGRE ALTYAPI") */
+.bg-gradient-to-br span.uppercase,
+.bg-white span.uppercase,
+.bg-gray-50 span.uppercase {
+  color: #4b5563 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Ensure muted / secondary text passes WCAG AAA contrast standard on light backgrounds */
+.text-neutral-400,
+.text-neutral-500,
+.text-gray-400,
+.text-gray-500 {
+  color: #4b5563 !important; /* Dark Slate Gray (100% legible) */
+}
+
+/* Enforce crisp dark text on white and light Krem cards */
+.bg-white p, .bg-gray-50 p {
+  color: #374151 !important;
+}
+
+.bg-white span.text-neutral-400, .bg-gray-50 span.text-neutral-400 {
+  color: #6b7280 !important;
+}
+
+/* Optimized Fast Targeted Hover Transitions for Interactive Elements (120 FPS Performance) */
+a, button, input, select, textarea, .transition-all, .transition-colors, .transition-transform {
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 200ms;
+}
+
+/* Soft Box Shadows */
+.shadow-sm, .shadow, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl {
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.04) !important;
+}
+
+.hover\:shadow-md:hover, .hover\:shadow-lg:hover, .hover\:shadow-xl:hover {
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Target and style the Instagram Showcase CTA button specifically */
+#instagramShowcase a[href*="instagram.com"] {
+  background: linear-gradient(135deg, #00b594 0%, #059669 100%) !important;
+  color: #ffffff !important;
+  border-radius: 20px !important;
+  border: none !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 181, 148, 0.3) !important;
+}
+
+#instagramShowcase a[href*="instagram.com"]:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 15px 30px -5px rgba(0, 181, 148, 0.4) !important;
+}
+
+/* Subpage Hero Banners - Guaranteed Dark Gradient Backgrounds & 100% Readable Text */
+#productsHeroSection,
+section.subpage-hero {
+  position: relative !important;
+  color: #ffffff !important;
+  background-color: #064e3b !important; /* Fallback dark emerald */
+}
+
+/* Category Hero Gradient Background Classes */
+.hero-theme-all {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+}
+.hero-theme-bebek-bezi {
+  background: linear-gradient(135deg, #075985 0%, #0284c7 50%, #0369a1 100%) !important;
+}
+.hero-theme-yetiskin-bezi {
+  background: linear-gradient(135deg, #064e3b 0%, #0d9488 50%, #115e59 100%) !important;
+}
+.hero-theme-hijyenik-ped {
+  background: linear-gradient(135deg, #831843 0%, #be185d 50%, #9f1239 100%) !important;
+}
+.hero-theme-islak-mendil {
+  background: linear-gradient(135deg, #064e3b 0%, #059669 50%, #047857 100%) !important;
+}
+.hero-theme-bebek-bakimi {
+  background: linear-gradient(135deg, #7c2d12 0%, #ea580c 50%, #c2410c 100%) !important;
+}
+.hero-theme-pamuk-urunleri {
+  background: linear-gradient(135deg, #312e81 0%, #4f46e5 50%, #4338ca 100%) !important;
+}
+
+/* Subpage Hero Banners - Clean Modern White Theme */
+#productsHeroSection {
+  position: relative !important;
+  color: #111827 !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+}
+
+#productsHeroSection #heroBgImage {
+  position: absolute !important;
+  inset: 0 !important;
+  opacity: 0.03 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  mix-blend-mode: multiply !important;
+  z-index: 0 !important;
+}
+
+/* Subpage Hero Typography & Clean Minimalist Styling (No Shadows/Effects) */
+#productsHeroSection h1 {
+  color: #111827 !important;
+  font-weight: 900 !important;
+  text-shadow: none !important;
+  filter: none !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+#productsHeroSection p {
+  color: #4b5563 !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+  filter: none !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Subpage Hero Banners - Guaranteed Rich Photo Background & 100% Readable Text */
+section.subpage-hero {
+  position: relative !important;
+  color: #ffffff !important;
+  background-color: #064e3b !important;
+}
+
+section.subpage-hero .subpage-hero-bg,
+section.subpage-hero div[style*="background-image"] {
+  position: absolute !important;
+  inset: 0 !important;
+  opacity: 0.35 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  z-index: 0 !important;
+}
+
+section.subpage-hero .subpage-hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.92) 0%, rgba(4, 57, 43, 0.85) 100%) !important;
+  z-index: 1 !important;
+}
+
+section.subpage-hero h1 {
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+section.subpage-hero p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 500 !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+section.subpage-hero nav,
+section.subpage-hero nav a,
+section.subpage-hero nav span {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Remove borders, shadows, and rounded corners from right-side right images, and make them fill the area */
+div.relative.border-4.border-white {
+  border: none !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+div.relative.border-4.border-white img {
+  border-radius: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Style for the CTA card to make background image visible and text white/readable */
+div.bg-gradient-to-br[class*="from-\[\#000000\]"][class*="to-\[\#0047ba\]"].rounded-3xl.p-8 {
+  background: linear-gradient(135deg, #071930 0%, #003366 100%) !important; /* Premium dark navy gradient */
+}
+
+/* Make text inside the CTA card white and highly readable */
+div.bg-gradient-to-br[class*="from-\[\#000000\]"][class*="to-\[\#0047ba\]"].rounded-3xl.p-8 h3 {
+  color: #ffffff !important;
+}
+
+div.bg-gradient-to-br[class*="from-\[\#000000\]"][class*="to-\[\#0047ba\]"].rounded-3xl.p-8 p {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Make background image clearly visible inside the CTA card */
+div.bg-gradient-to-br[class*="from-\[\#000000\]"][class*="to-\[\#0047ba\]"].rounded-3xl.p-8 div[style*="background-image"] {
+  opacity: 0.35 !important; /* Increased from 0.05 to 0.35 */
+}
+
+/* Style the button inside the CTA card to be clear and readable */
+div.bg-gradient-to-br[class*="from-\[\#000000\]"][class*="to-\[\#0047ba\]"].rounded-3xl.p-8 a {
+  background: #ffffff !important; /* White button */
+  color: #003366 !important; /* Dark navy text */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+}
+
+div.bg-gradient-to-br[class*="from-\[\#000000\]"][class*="to-\[\#0047ba\]"].rounded-3xl.p-8 a:hover {
+  background: #00b594 !important; /* Brand mint on hover */
+  color: #ffffff !important; /* White text on hover */
+}
+
+/* Make language selector dropdown links dark, visible, and selectable */
+#headerTopRow .group\/lang .absolute {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+#headerTopRow .group\/lang .absolute a {
+  color: #1f2937 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 6px 14px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+#headerTopRow .group\/lang .absolute a:hover {
+  color: #0E8E74 !important;
+  background-color: #f3fdf8 !important;
+}
+
+/* ==========================================================================
+   Master Enterprise B2B Navigation Header Styles
+   ========================================================================== */
+
+/* Slow Zoom Video Animation */
+@keyframes slowZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 20s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Aurora Borealis Animated Light Keyframes */
+@keyframes auroraFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+  50% { transform: translate(45px, -35px) scale(1.15); opacity: 0.85; }
+}
+
+@keyframes auroraFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+  50% { transform: translate(-50px, 40px) scale(1.2); opacity: 0.8; }
+}
+
+@keyframes auroraFloat3 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+  50% { transform: translate(35px, 50px) scale(1.1); opacity: 0.75; }
+}
+
+.animate-aurora-float1 {
+  animation: auroraFloat1 18s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-aurora-float2 {
+  animation: auroraFloat2 22s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-aurora-float3 {
+  animation: auroraFloat3 16s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Dynamic Animated Aurora Gradient Shift & Pulsing Glow Keyframes */
+@keyframes auroraGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes auroraPulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(137, 102, 165, 0.45), 0 0 30px rgba(0, 181, 148, 0.25); }
+  50% { box-shadow: 0 0 25px rgba(209, 170, 229, 0.75), 0 0 45px rgba(0, 198, 255, 0.55); }
+}
+
+/* Floating B2B Action Widget - Sleek Modern Dark Glass & Emerald Highlight */
+#floatingB2BWidget {
+  background: rgba(15, 18, 25, 0.90) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  transition: all 300ms ease !important;
+}
+
+#floatingB2BWidget:hover {
+  background: rgba(6, 78, 59, 0.95) !important;
+  border-color: rgba(0, 181, 148, 0.6) !important;
+  box-shadow: 0 12px 35px rgba(0, 181, 148, 0.35) !important;
+}
+
+#floatingB2BWidget i {
+  color: #00b594 !important;
+  transition: color 300ms ease !important;
+}
+
+#floatingB2BWidget:hover i {
+  color: #ffffff !important;
+}
+
+#floatingB2BWidget span {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* Permanent Animated Aurora Header Background (Kaydırmadan da ve Kaydırılınca da Belli Olan Aurora Efekti) */
+#headerNavRow {
+  height: 72px !important;
+  background: linear-gradient(-45deg, 
+    rgba(10, 15, 26, 0.96), 
+    rgba(6, 78, 59, 0.94), 
+    rgba(16, 37, 66, 0.94), 
+    rgba(0, 181, 148, 0.90), 
+    rgba(15, 23, 42, 0.96)
+  ) !important;
+  background-size: 300% 300% !important;
+  animation: headerAuroraShift 14s ease infinite !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(0, 181, 148, 0.35) !important;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.50), 0 0 20px rgba(0, 181, 148, 0.20) !important;
+}
+
+@keyframes headerAuroraShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Logo Styling - 100% Crisp White in all states */
+#headerNavRow img[alt*="Boni Kimya"],
+#headerNavRow img[alt*="Logo"],
+#headerLogo {
+  filter: brightness(0) invert(1) !important;
+  transition: filter 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms ease !important;
+}
+
+/* Navigation Links & Dropdown Buttons Styling (Title Case, 12px font size) */
+#headerNavRow > div > nav > a,
+#headerNavRow > div > nav > div > button {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  color: #ffffff !important;
+  transition: color 250ms ease, text-shadow 250ms ease !important;
+}
+
+#headerNavRow > div > nav > a:hover,
+#headerNavRow > div > nav > div:hover > button {
+  color: #00b594 !important;
+  text-shadow: 0 0 12px rgba(0, 181, 148, 0.6) !important;
+}
+
+/* Header Text & Icon Styling (Pure White) */
+#headerContactDetails a,
+#headerWhatsappLink,
+#headerLangBtn,
+#headerNavRow #openHeaderSearchBtn i,
+#mobileMenuBtn i {
+  color: #ffffff !important;
+}
+
+/* Logo Styling */
+.b2b-logo-container {
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.b2b-logo-img {
+  width: 170px !important;
+  height: auto !important;
+  max-height: 48px !important;
+  object-fit: contain !important;
+  transition: transform 300ms ease !important;
+}
+
+.b2b-logo-img:hover {
+  transform: scale(1.02) !important;
+}
+
+/* Navigation Links & Gap (40px, 16px, 600, 0.2px) */
+.b2b-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 40px !important;
+}
+
+.b2b-nav-link {
+  position: relative;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2px !important;
+  color: #1f2937 !important;
+  padding: 8px 0;
+  transition: color 250ms ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.b2b-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  background-color: #0E8E74;
+  border-radius: 999px;
+  transition: width 250ms ease;
+}
+
+.b2b-nav-link:hover::after,
+.b2b-nav-link.active::after,
+.group\/nav-item:hover .b2b-nav-link::after {
+  width: 100%;
+}
+
+.b2b-nav-link:hover,
+.group\/nav-item:hover .b2b-nav-link {
+  color: #0E8E74 !important;
+}
+
+/* Chevron 180 Rotation */
+.b2b-chevron {
+  margin-left: 6px;
+  font-size: 12px;
+  transition: transform 250ms ease, color 250ms ease;
+}
+
+.group\/nav-item:hover .b2b-chevron {
+  transform: rotate(180deg);
+  color: #0E8E74;
+}
+
+/* Mega-Menu Dropdown Panel */
+.b2b-dropdown-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 100%;
+  margin-top: 0;
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-radius: 18px !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12) !important;
+  padding: 32px 40px !important;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 250ms ease, transform 250ms ease, visibility 250ms ease;
+  z-index: 50;
+}
+
+.group\/nav-item:hover .b2b-dropdown-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* CTA Pill Button (Teklif Al) */
+.b2b-cta-pill {
+  height: 48px !important;
+  padding: 0 30px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(135deg, #0E8E74 0%, #0b7761 100%) !important;
+  color: #ffffff !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: 0 6px 20px rgba(14, 142, 116, 0.25) !important;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  border: none !important;
+}
+
+.b2b-cta-pill:hover {
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 12px 28px rgba(14, 142, 116, 0.35) !important;
+  background: linear-gradient(135deg, #109f83 0%, #0E8E74 100%) !important;
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   Navigation Dropdown & Mega Menu Hover Stability & Full Width Layout
+   ========================================================================== */
+#headerNavRow {
+  position: relative !important;
+}
+
+.group\/nav-item {
+  position: static !important; /* Allow absolute child mega menu to stretch full screen width */
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.group\/nav-item > div.absolute {
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  margin-top: 0 !important;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out, transform 200ms ease-in-out !important;
+}
+
+/* Invisible Hover Bridge Pseudo-Element */
+.group\/nav-item > div.absolute::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -24px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 24px !important;
+  background: transparent !important;
+  pointer-events: auto !important;
+}
+
+/* Small Dropdowns (e.g. Language Selector) */
+.group\/lang {
+  position: relative !important;
+}
+
+.group\/lang > div.absolute {
+  top: 100% !important;
+  margin-top: 0 !important;
+}
+
+.group\/lang > div.absolute::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -12px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 12px !important;
+  background: transparent !important;
+  pointer-events: auto !important;
+}
+
+/* Fix Mega Menu Card Description Text Color for 100% Readability */
+.group\/menu-card span:nth-of-type(2),
+.group\/prod-item span:nth-of-type(2) {
+  color: #6b7280 !important; /* Dark Slate Gray for 100% Contrast */
+  font-weight: 400 !important;
+}
+
+
+
+
+
